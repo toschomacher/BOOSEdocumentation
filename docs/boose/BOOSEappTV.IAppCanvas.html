@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Interface IAppCanvas | mysite ">
     
-    <meta name="description" content="Extended canvas interface for custom BOOSE drawing commands.">
+    <meta name="description" content="Defines an extended canvas interface for custom BOOSE drawing commands.">
       <link rel="shortcut icon" href="../favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
@@ -81,7 +81,7 @@
 
 
   <h1 id="BOOSEappTV_IAppCanvas" data-uid="BOOSEappTV.IAppCanvas" class="text-break">Interface IAppCanvas</h1>
-  <div class="markdown level0 summary"><p>Extended canvas interface for custom BOOSE drawing commands.</p>
+  <div class="markdown level0 summary"><p>Defines an extended canvas interface for custom BOOSE drawing commands.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritedMembers">
@@ -135,6 +135,11 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public interface IAppCanvas : ICanvas</code></pre>
   </div>
+  <h5 id="BOOSEappTV_IAppCanvas_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This interface extends <span class="xref">BOOSE.ICanvas</span> with additional
+application-specific drawing operations that are not part of
+the standard BOOSE canvas API.</p>
+</div>
   <h3 id="methods">Methods
 </h3>
   <span class="small pull-right mobile-hide">
@@ -142,11 +147,11 @@
     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_IAppCanvas_DrawLabeledShape_System_String_.md&amp;value=---%0Auid%3A%20BOOSEappTV.IAppCanvas.DrawLabeledShape(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/IAppCanvas.cs/#L26">View Source</a>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/IAppCanvas.cs/#L41">View Source</a>
   </span>
   <a id="BOOSEappTV_IAppCanvas_DrawLabeledShape_" data-uid="BOOSEappTV.IAppCanvas.DrawLabeledShape*"></a>
   <h4 id="BOOSEappTV_IAppCanvas_DrawLabeledShape_System_String_" data-uid="BOOSEappTV.IAppCanvas.DrawLabeledShape(System.String)">DrawLabeledShape(string)</h4>
-  <div class="markdown level1 summary"><p>Draws a labeled shape at the current position.</p>
+  <div class="markdown level1 summary"><p>Draws a labelled shape at the current cursor position.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -166,17 +171,21 @@
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">label</span></td>
-        <td><p>Text to display.</p>
+        <td><p>The text label to display alongside or within the shape.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 id="BOOSEappTV_IAppCanvas_DrawLabeledShape_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is intended for future extensions and may not be
+implemented by all canvas types.</p>
+</div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_IAppCanvas_Star_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20BOOSEappTV.IAppCanvas.Star(System.Int32%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/IAppCanvas.cs/#L20">View Source</a>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/IAppCanvas.cs/#L29">View Source</a>
   </span>
   <a id="BOOSEappTV_IAppCanvas_Star_" data-uid="BOOSEappTV.IAppCanvas.Star*"></a>
   <h4 id="BOOSEappTV_IAppCanvas_Star_System_Int32_System_Boolean_" data-uid="BOOSEappTV.IAppCanvas.Star(System.Int32,System.Boolean)">Star(int, bool)</h4>
@@ -200,13 +209,13 @@
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">size</span></td>
-        <td><p>Size of the star.</p>
+        <td><p>The size of the star, measured as the outer radius.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">filled</span></td>
-        <td><p>Whether the star is filled.</p>
+        <td><p><code>true</code> to draw a filled star; <code>false</code> to draw only the outline.</p>
 </td>
       </tr>
     </tbody>
@@ -223,7 +232,7 @@
                     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_IAppCanvas.md&amp;value=---%0Auid%3A%20BOOSEappTV.IAppCanvas%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/IAppCanvas.cs/#L13" class="contribution-link">View Source</a>
+                    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/IAppCanvas.cs/#L18" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

@@ -85,34 +85,106 @@
     <h3 id="classes">
 Classes
 </h3>
+      <h4><a class="xref" href="BOOSEappTV.AppArray.html">AppArray</a></h4>
+      <section><p>Represents an array variable declaration within the BOOSE interpreter.</p>
+</section>
+      <h4><a class="xref" href="BOOSEappTV.AppAssign.html">AppAssign</a></h4>
+      <section></section>
+      <h4><a class="xref" href="BOOSEappTV.AppBoolean.html">AppBoolean</a></h4>
+      <section><p>Represents a boolean variable declaration within the BOOSE interpreter.</p>
+</section>
+      <h4><a class="xref" href="BOOSEappTV.AppCall.html">AppCall</a></h4>
+      <section><p>Represents a method call command within the BOOSE interpreter.</p>
+</section>
       <h4><a class="xref" href="BOOSEappTV.AppCanvas.html">AppCanvas</a></h4>
-      <section><p>Custom canvas implementation that extends BOOSE.Canvas and adds application-specific features.
-This class manages the drawing state, drawing surface (Bitmap), and basic geometric drawing operations.</p>
+      <section><p>Custom canvas implementation that extends <span class="xref">BOOSE.Canvas</span>
+and provides application-specific drawing functionality.</p>
 </section>
       <h4><a class="xref" href="BOOSEappTV.AppCircle.html">AppCircle</a></h4>
-      <section></section>
+      <section><p>Represents a circle drawing command that evaluates a radius expression
+at runtime and renders a circle on the canvas.</p>
+</section>
       <h4><a class="xref" href="BOOSEappTV.AppCommandFactory.html">AppCommandFactory</a></h4>
-      <section></section>
+      <section><p>Provides a command factory for the BOOSEappTV interpreter.</p>
+</section>
       <h4><a class="xref" href="BOOSEappTV.AppConsole.html">AppConsole</a></h4>
-      <section></section>
+      <section><p>Provides a simple console output facility backed by a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.richtextbox">RichTextBox</a>.</p>
+</section>
       <h4><a class="xref" href="BOOSEappTV.AppDrawTo.html">AppDrawTo</a></h4>
-      <section></section>
+      <section><p>Represents a drawing command that draws a line from the current
+cursor position to a specified coordinate.</p>
+</section>
+      <h4><a class="xref" href="BOOSEappTV.AppElse.html">AppElse</a></h4>
+      <section><p>Represents an <code>else</code> command associated with a preceding <code>if</code> statement.</p>
+</section>
+      <h4><a class="xref" href="BOOSEappTV.AppEndFor.html">AppEndFor</a></h4>
+      <section><p>Represents an <code>end for</code> command that concludes a <code>for</code> loop.</p>
+</section>
+      <h4><a class="xref" href="BOOSEappTV.AppEndIf.html">AppEndIf</a></h4>
+      <section><p>Represents an <code>end if</code> command that marks the termination
+of an <code>if</code> or <code>if-else</code> block.</p>
+</section>
+      <h4><a class="xref" href="BOOSEappTV.AppEndMethod.html">AppEndMethod</a></h4>
+      <section><p>Represents an <code>end method</code> command that terminates the execution
+of a user-defined method.</p>
+</section>
+      <h4><a class="xref" href="BOOSEappTV.AppEndWhile.html">AppEndWhile</a></h4>
+      <section><p>Represents an <code>end while</code> command that terminates a <code>while</code> loop.</p>
+</section>
+      <h4><a class="xref" href="BOOSEappTV.AppFor.html">AppFor</a></h4>
+      <section><p>Represents a <code>for</code> loop command following BOOSE syntax:
+<code>for var = start to end step n</code>.</p>
+</section>
+      <h4><a class="xref" href="BOOSEappTV.AppIf.html">AppIf</a></h4>
+      <section><p>Represents an <code>if</code> conditional command that controls
+program flow based on a boolean expression.</p>
+</section>
+      <h4><a class="xref" href="BOOSEappTV.AppInt.html">AppInt</a></h4>
+      <section><p>Represents an integer variable declaration command.</p>
+</section>
+      <h4><a class="xref" href="BOOSEappTV.AppMethod.html">AppMethod</a></h4>
+      <section><p>Represents a method declaration command.</p>
+</section>
       <h4><a class="xref" href="BOOSEappTV.AppMoveTo.html">AppMoveTo</a></h4>
-      <section></section>
+      <section><p>Represents a move-to command that updates the canvas cursor position
+without drawing.</p>
+</section>
+      <h4><a class="xref" href="BOOSEappTV.AppParser.html">AppParser</a></h4>
+      <section><p>Custom parser implementation for the BOOSEappTV interpreter.</p>
+</section>
+      <h4><a class="xref" href="BOOSEappTV.AppPeek.html">AppPeek</a></h4>
+      <section><p>Represents a runtime array read operation using the <code>peek</code> command.</p>
+</section>
       <h4><a class="xref" href="BOOSEappTV.AppPenColour.html">AppPenColour</a></h4>
-      <section></section>
+      <section><p>Represents a pen colour command that sets the current drawing colour
+using RGB values.</p>
+</section>
+      <h4><a class="xref" href="BOOSEappTV.AppPoke.html">AppPoke</a></h4>
+      <section><p>Represents a runtime array assignment using the <code>poke</code> command.</p>
+</section>
+      <h4><a class="xref" href="BOOSEappTV.AppReal.html">AppReal</a></h4>
+      <section><p>Represents a real (floating-point) variable declaration command.</p>
+</section>
       <h4><a class="xref" href="BOOSEappTV.AppStar.html">AppStar</a></h4>
-      <section><p>Command to draw a star shape using IAppCanvas.</p>
+      <section><p>Represents a star drawing command.</p>
+</section>
+      <h4><a class="xref" href="BOOSEappTV.AppStoredProgram.html">AppStoredProgram</a></h4>
+      <section><p>Custom stored program implementation extending BOOSE.StoredProgram.</p>
+</section>
+      <h4><a class="xref" href="BOOSEappTV.AppStoredProgram.MethodDef.html">AppStoredProgram.MethodDef</a></h4>
+      <section><p>Represents a method definition stored in the program.</p>
+</section>
+      <h4><a class="xref" href="BOOSEappTV.AppWhile.html">AppWhile</a></h4>
+      <section><p>Represents a <code>while</code> loop command.</p>
 </section>
       <h4><a class="xref" href="BOOSEappTV.BOOSEForm.html">BOOSEForm</a></h4>
-      <section><p>Represents the main form of the BOOSEappTV application.
-Provides drawing functionality and handles user interactions.</p>
+      <section><p>Represents the main form of the BOOSEappTV application.</p>
 </section>
     <h3 id="interfaces">
 Interfaces
 </h3>
       <h4><a class="xref" href="BOOSEappTV.IAppCanvas.html">IAppCanvas</a></h4>
-      <section><p>Extended canvas interface for custom BOOSE drawing commands.</p>
+      <section><p>Defines an extended canvas interface for custom BOOSE drawing commands.</p>
 </section>
 
 

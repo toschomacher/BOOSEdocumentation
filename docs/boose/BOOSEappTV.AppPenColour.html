@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Class AppPenColour | mysite ">
     
-    
+    <meta name="description" content="Represents a pen colour command that sets the current drawing colour using RGB values.">
       <link rel="shortcut icon" href="../favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
@@ -81,7 +81,9 @@
 
 
   <h1 id="BOOSEappTV_AppPenColour" data-uid="BOOSEappTV.AppPenColour" class="text-break">Class AppPenColour</h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Represents a pen colour command that sets the current drawing colour
+using RGB values.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -187,6 +189,10 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class AppPenColour : CommandThreeParameters, ICommand</code></pre>
   </div>
+  <h5 id="BOOSEappTV_AppPenColour_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This command updates the canvas pen and brush colour at runtime.
+All three parameters must be integers in the range 0–255.</p>
+</div>
   <h3 id="constructors">Constructors
 </h3>
   <span class="small pull-right mobile-hide">
@@ -194,11 +200,12 @@
     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppPenColour__ctor.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppPenColour.%23ctor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppPenColour.cs/#L13">View Source</a>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppPenColour.cs/#L25">View Source</a>
   </span>
   <a id="BOOSEappTV_AppPenColour__ctor_" data-uid="BOOSEappTV.AppPenColour.#ctor*"></a>
   <h4 id="BOOSEappTV_AppPenColour__ctor" data-uid="BOOSEappTV.AppPenColour.#ctor">AppPenColour()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initialises a new instance of the <a class="xref" href="BOOSEappTV.AppPenColour.html">AppPenColour</a> class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -209,11 +216,13 @@
     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppPenColour__ctor_BOOSE_Canvas_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppPenColour.%23ctor(BOOSE.Canvas%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppPenColour.cs/#L14">View Source</a>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppPenColour.cs/#L35">View Source</a>
   </span>
   <a id="BOOSEappTV_AppPenColour__ctor_" data-uid="BOOSEappTV.AppPenColour.#ctor*"></a>
   <h4 id="BOOSEappTV_AppPenColour__ctor_BOOSE_Canvas_System_Int32_System_Int32_System_Int32_" data-uid="BOOSEappTV.AppPenColour.#ctor(BOOSE.Canvas,System.Int32,System.Int32,System.Int32)">AppPenColour(Canvas, int, int, int)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initialises a new instance of the <a class="xref" href="BOOSEappTV.AppPenColour.html">AppPenColour</a> class
+with an explicit canvas and RGB values.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -232,22 +241,26 @@
       <tr>
         <td><span class="xref">Canvas</span></td>
         <td><span class="parametername">c</span></td>
-        <td></td>
+        <td><p>The canvas whose pen colour will be updated.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">r</span></td>
-        <td></td>
+        <td><p>The red component (0–255).</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">g</span></td>
-        <td></td>
+        <td><p>The green component (0–255).</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">b</span></td>
-        <td></td>
+        <td><p>The blue component (0–255).</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -258,11 +271,12 @@
     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppPenColour_CheckParameters_System_String___.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppPenColour.CheckParameters(System.String%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppPenColour.cs/#L33">View Source</a>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppPenColour.cs/#L76">View Source</a>
   </span>
   <a id="BOOSEappTV_AppPenColour_CheckParameters_" data-uid="BOOSEappTV.AppPenColour.CheckParameters*"></a>
   <h4 id="BOOSEappTV_AppPenColour_CheckParameters_System_String___" data-uid="BOOSEappTV.AppPenColour.CheckParameters(System.String[])">CheckParameters(string[])</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Performs parameter validation for the pen colour command.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -281,7 +295,8 @@
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
         <td><span class="parametername">parameterList</span></td>
-        <td></td>
+        <td><p>The parameter list.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -292,11 +307,12 @@
     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppPenColour_Compile.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppPenColour.Compile%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppPenColour.cs/#L41">View Source</a>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppPenColour.cs/#L95">View Source</a>
   </span>
   <a id="BOOSEappTV_AppPenColour_Compile_" data-uid="BOOSEappTV.AppPenColour.Compile*"></a>
   <h4 id="BOOSEappTV_AppPenColour_Compile" data-uid="BOOSEappTV.AppPenColour.Compile">Compile()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Performs compile-time processing for the pen colour command.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -309,11 +325,12 @@
     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppPenColour_Execute.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppPenColour.Execute%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppPenColour.cs/#L20">View Source</a>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppPenColour.cs/#L53">View Source</a>
   </span>
   <a id="BOOSEappTV_AppPenColour_Execute_" data-uid="BOOSEappTV.AppPenColour.Execute*"></a>
   <h4 id="BOOSEappTV_AppPenColour_Execute" data-uid="BOOSEappTV.AppPenColour.Execute">Execute()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Executes the pen colour command at runtime.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -321,16 +338,38 @@
   </div>
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">BOOSE.Command.Execute()</span></div>
+  <h5 id="BOOSEappTV_AppPenColour_Execute_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The RGB parameters are evaluated, validated, and then applied
+to the canvas. Only integer values within the valid RGB range
+are permitted.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CanvasException</span></td>
+        <td><p>Thrown when non-integer or out-of-range RGB values are supplied.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppPenColour_Set_BOOSE_StoredProgram_System_String_.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppPenColour.Set(BOOSE.StoredProgram%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppPenColour.cs/#L45">View Source</a>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppPenColour.cs/#L105">View Source</a>
   </span>
   <a id="BOOSEappTV_AppPenColour_Set_" data-uid="BOOSEappTV.AppPenColour.Set*"></a>
   <h4 id="BOOSEappTV_AppPenColour_Set_BOOSE_StoredProgram_System_String_" data-uid="BOOSEappTV.AppPenColour.Set(BOOSE.StoredProgram,System.String)">Set(StoredProgram, string)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sets the parameters for the pen colour command.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -349,12 +388,14 @@
       <tr>
         <td><span class="xref">StoredProgram</span></td>
         <td><span class="parametername">Program</span></td>
-        <td></td>
+        <td><p>The active <span class="xref">BOOSE.StoredProgram</span>.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">Params</span></td>
-        <td></td>
+        <td><p>The parameter string.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -365,11 +406,11 @@
     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppPenColour_ToString.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppPenColour.ToString%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppPenColour.cs/#L37">View Source</a>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppPenColour.cs/#L87">View Source</a>
   </span>
   <a id="BOOSEappTV_AppPenColour_ToString_" data-uid="BOOSEappTV.AppPenColour.ToString*"></a>
   <h4 id="BOOSEappTV_AppPenColour_ToString" data-uid="BOOSEappTV.AppPenColour.ToString">ToString()</h4>
-  <div class="markdown level1 summary"><p>Returns a string that represents the current object.</p>
+  <div class="markdown level1 summary"><p>Returns a string representation of the pen colour command.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -387,7 +428,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><p>A string that represents the current object.</p>
+        <td><p>A string containing the command name and RGB values.</p>
 </td>
       </tr>
     </tbody>
@@ -410,7 +451,7 @@
                     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppPenColour.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppPenColour%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppPenColour.cs/#L10" class="contribution-link">View Source</a>
+                    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppPenColour.cs/#L18" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

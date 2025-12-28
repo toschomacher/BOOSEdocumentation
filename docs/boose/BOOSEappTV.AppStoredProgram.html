@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class AppStoredProgram | mysite </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class AppStoredProgram | mysite ">
+    
+    <meta name="description" content="Custom stored program implementation extending BOOSE.StoredProgram.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="BOOSEappTV Docs">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BOOSEappTV.AppStoredProgram">
+
+
+
+  <h1 id="BOOSEappTV_AppStoredProgram" data-uid="BOOSEappTV.AppStoredProgram" class="text-break">Class AppStoredProgram</h1>
+  <div class="markdown level0 summary"><p>Custom stored program implementation extending BOOSE.StoredProgram.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist">ArrayList</a></div>
+    <div class="level2"><span class="xref">StoredProgram</span></div>
+    <div class="level3"><span class="xref">AppStoredProgram</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ilist">IList</a></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.icollection">ICollection</a></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icloneable">ICloneable</a></div>
+    <div><span class="xref">IStoredProgram</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">StoredProgram.IsValidProgram()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">StoredProgram.SetSyntaxStatus(bool)</a>
+    </div>
+    <div>
+      <span class="xref">StoredProgram.AddMethod(Method)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">StoredProgram.GetMethod(string)</a>
+    </div>
+    <div>
+      <span class="xref">StoredProgram.AddVariable(Evaluation)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">StoredProgram.GetVariable(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">StoredProgram.GetVariable(int)</a>
+    </div>
+    <div>
+      <span class="xref">StoredProgram.FindVariable(Evaluation)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">StoredProgram.FindVariable(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">StoredProgram.VariableExists(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">StoredProgram.UpdateVariable(string, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">StoredProgram.DeleteVariable(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">StoredProgram.IsExpression(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">StoredProgram.EvaluateExpressionWithString(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">StoredProgram.EvaluateExpression(string)</a>
+    </div>
+    <div>
+      <span class="xref">StoredProgram.Push(ConditionalCommand)</span>
+    </div>
+    <div>
+      <span class="xref">StoredProgram.Pop()</span>
+    </div>
+    <div>
+      <span class="xref">StoredProgram.Add(Command)</span>
+    </div>
+    <div>
+      <span class="xref">StoredProgram.NextCommand()</span>
+    </div>
+    <div>
+      <span class="xref">StoredProgram.ResetProgram()</span>
+    </div>
+    <div>
+      <span class="xref">StoredProgram.Commandsleft()</span>
+    </div>
+    <div>
+      <span class="xref">StoredProgram.Run()</span>
+    </div>
+    <div>
+      <span class="xref">StoredProgram.PC</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.adapter">ArrayList.Adapter(IList)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.add">ArrayList.Add(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.addrange">ArrayList.AddRange(ICollection)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.binarysearch#system-collections-arraylist-binarysearch(system-int32-system-int32-system-object-system-collections-icomparer)">ArrayList.BinarySearch(int, int, object, IComparer)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.binarysearch#system-collections-arraylist-binarysearch(system-object)">ArrayList.BinarySearch(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.binarysearch#system-collections-arraylist-binarysearch(system-object-system-collections-icomparer)">ArrayList.BinarySearch(object, IComparer)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.clear">ArrayList.Clear()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.clone">ArrayList.Clone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.contains">ArrayList.Contains(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.copyto#system-collections-arraylist-copyto(system-array)">ArrayList.CopyTo(Array)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.copyto#system-collections-arraylist-copyto(system-array-system-int32)">ArrayList.CopyTo(Array, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.copyto#system-collections-arraylist-copyto(system-int32-system-array-system-int32-system-int32)">ArrayList.CopyTo(int, Array, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.fixedsize#system-collections-arraylist-fixedsize(system-collections-arraylist)">ArrayList.FixedSize(ArrayList)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.fixedsize#system-collections-arraylist-fixedsize(system-collections-ilist)">ArrayList.FixedSize(IList)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.getenumerator#system-collections-arraylist-getenumerator">ArrayList.GetEnumerator()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.getenumerator#system-collections-arraylist-getenumerator(system-int32-system-int32)">ArrayList.GetEnumerator(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.getrange">ArrayList.GetRange(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.indexof#system-collections-arraylist-indexof(system-object)">ArrayList.IndexOf(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.indexof#system-collections-arraylist-indexof(system-object-system-int32)">ArrayList.IndexOf(object, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.indexof#system-collections-arraylist-indexof(system-object-system-int32-system-int32)">ArrayList.IndexOf(object, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.insert">ArrayList.Insert(int, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.insertrange">ArrayList.InsertRange(int, ICollection)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.lastindexof#system-collections-arraylist-lastindexof(system-object)">ArrayList.LastIndexOf(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.lastindexof#system-collections-arraylist-lastindexof(system-object-system-int32)">ArrayList.LastIndexOf(object, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.lastindexof#system-collections-arraylist-lastindexof(system-object-system-int32-system-int32)">ArrayList.LastIndexOf(object, int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.readonly#system-collections-arraylist-readonly(system-collections-arraylist)">ArrayList.ReadOnly(ArrayList)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.readonly#system-collections-arraylist-readonly(system-collections-ilist)">ArrayList.ReadOnly(IList)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.remove">ArrayList.Remove(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.removeat">ArrayList.RemoveAt(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.removerange">ArrayList.RemoveRange(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.repeat">ArrayList.Repeat(object, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.reverse#system-collections-arraylist-reverse">ArrayList.Reverse()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.reverse#system-collections-arraylist-reverse(system-int32-system-int32)">ArrayList.Reverse(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.setrange">ArrayList.SetRange(int, ICollection)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.sort#system-collections-arraylist-sort">ArrayList.Sort()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.sort#system-collections-arraylist-sort(system-collections-icomparer)">ArrayList.Sort(IComparer)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.sort#system-collections-arraylist-sort(system-int32-system-int32-system-collections-icomparer)">ArrayList.Sort(int, int, IComparer)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.synchronized#system-collections-arraylist-synchronized(system-collections-arraylist)">ArrayList.Synchronized(ArrayList)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.synchronized#system-collections-arraylist-synchronized(system-collections-ilist)">ArrayList.Synchronized(IList)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.toarray#system-collections-arraylist-toarray">ArrayList.ToArray()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.toarray#system-collections-arraylist-toarray(system-type)">ArrayList.ToArray(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.trimtosize">ArrayList.TrimToSize()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.capacity">ArrayList.Capacity</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.count">ArrayList.Count</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.isfixedsize">ArrayList.IsFixedSize</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.isreadonly">ArrayList.IsReadOnly</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.issynchronized">ArrayList.IsSynchronized</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">ArrayList.this[int]</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.arraylist.syncroot">ArrayList.SyncRoot</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BOOSEappTV.html">BOOSEappTV</a></h6>
+  <h6><strong>Assembly</strong>: BOOSEappTV.dll</h6>
+  <h5 id="BOOSEappTV_AppStoredProgram_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AppStoredProgram : StoredProgram, IList, ICollection, IEnumerable, ICloneable, IStoredProgram</code></pre>
+  </div>
+  <h5 id="BOOSEappTV_AppStoredProgram_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This class is the core runtime container for the BOOSEappTV interpreter.
+It extends <span class="xref">BOOSE.StoredProgram</span> to support:</p>
+<ul><li>User-defined methods with parameters and return values</li><li>Call stack management</li><li>Custom variable types (int, real, boolean)</li><li>Robust expression tidying and evaluation</li></ul>
+The class preserves BOOSE’s two-pass execution model by ensuring that
+variable declaration occurs during parsing/compilation and that all
+evaluation and assignment occurs at runtime.
+</div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppStoredProgram__ctor_BOOSE_ICanvas_.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppStoredProgram.%23ctor(BOOSE.ICanvas)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppStoredProgram.cs/#L113">View Source</a>
+  </span>
+  <a id="BOOSEappTV_AppStoredProgram__ctor_" data-uid="BOOSEappTV.AppStoredProgram.#ctor*"></a>
+  <h4 id="BOOSEappTV_AppStoredProgram__ctor_BOOSE_ICanvas_" data-uid="BOOSEappTV.AppStoredProgram.#ctor(BOOSE.ICanvas)">AppStoredProgram(ICanvas)</h4>
+  <div class="markdown level1 summary"><p>Initialises a new instance of the <a class="xref" href="BOOSEappTV.AppStoredProgram.html">AppStoredProgram</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AppStoredProgram(ICanvas canvas)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ICanvas</span></td>
+        <td><span class="parametername">canvas</span></td>
+        <td><p>The canvas used for drawing commands.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppStoredProgram_EnsureVariableExistsForType_System_String_System_String_.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppStoredProgram.EnsureVariableExistsForType(System.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppStoredProgram.cs/#L328">View Source</a>
+  </span>
+  <a id="BOOSEappTV_AppStoredProgram_EnsureVariableExistsForType_" data-uid="BOOSEappTV.AppStoredProgram.EnsureVariableExistsForType*"></a>
+  <h4 id="BOOSEappTV_AppStoredProgram_EnsureVariableExistsForType_System_String_System_String_" data-uid="BOOSEappTV.AppStoredProgram.EnsureVariableExistsForType(System.String,System.String)">EnsureVariableExistsForType(string, string)</h4>
+  <div class="markdown level1 summary"><p>Ensures a variable of the specified type exists in the program.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnsureVariableExistsForType(string type, string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>The variable type.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The variable name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppStoredProgram_EnterMethod_BOOSEappTV_AppStoredProgram_MethodDef_System_Collections_Generic_List_System_String__.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppStoredProgram.EnterMethod(BOOSEappTV.AppStoredProgram.MethodDef%2CSystem.Collections.Generic.List%7BSystem.String%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppStoredProgram.cs/#L157">View Source</a>
+  </span>
+  <a id="BOOSEappTV_AppStoredProgram_EnterMethod_" data-uid="BOOSEappTV.AppStoredProgram.EnterMethod*"></a>
+  <h4 id="BOOSEappTV_AppStoredProgram_EnterMethod_BOOSEappTV_AppStoredProgram_MethodDef_System_Collections_Generic_List_System_String__" data-uid="BOOSEappTV.AppStoredProgram.EnterMethod(BOOSEappTV.AppStoredProgram.MethodDef,System.Collections.Generic.List{System.String})">EnterMethod(MethodDef, List&lt;string&gt;)</h4>
+  <div class="markdown level1 summary"><p>Enters a method call.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnterMethod(AppStoredProgram.MethodDef def, List&lt;string&gt; argExprs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BOOSEappTV.AppStoredProgram.html">AppStoredProgram</a>.<a class="xref" href="BOOSEappTV.AppStoredProgram.MethodDef.html">MethodDef</a></td>
+        <td><span class="parametername">def</span></td>
+        <td><p>The method definition.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">argExprs</span></td>
+        <td><p>The argument expressions.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="BOOSEappTV_AppStoredProgram_EnterMethod_BOOSEappTV_AppStoredProgram_MethodDef_System_Collections_Generic_List_System_String___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method:</p>
+<ul><li>Saves the current execution context</li><li>Evaluates argument expressions</li><li>Initialises parameter variables</li><li>Jumps execution to the method body</li></ul>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppStoredProgram_ExitMethod.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppStoredProgram.ExitMethod%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppStoredProgram.cs/#L193">View Source</a>
+  </span>
+  <a id="BOOSEappTV_AppStoredProgram_ExitMethod_" data-uid="BOOSEappTV.AppStoredProgram.ExitMethod*"></a>
+  <h4 id="BOOSEappTV_AppStoredProgram_ExitMethod" data-uid="BOOSEappTV.AppStoredProgram.ExitMethod">ExitMethod()</h4>
+  <div class="markdown level1 summary"><p>Exits the currently executing method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExitMethod()</code></pre>
+  </div>
+  <h5 id="BOOSEappTV_AppStoredProgram_ExitMethod_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Restores saved parameter variables and resumes execution
+at the instruction following the original call.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppStoredProgram_GetVarValue_System_String_.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppStoredProgram.GetVarValue(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppStoredProgram.cs/#L413">View Source</a>
+  </span>
+  <a id="BOOSEappTV_AppStoredProgram_GetVarValue_" data-uid="BOOSEappTV.AppStoredProgram.GetVarValue*"></a>
+  <h4 id="BOOSEappTV_AppStoredProgram_GetVarValue_System_String_" data-uid="BOOSEappTV.AppStoredProgram.GetVarValue(System.String)">GetVarValue(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string GetVarValue(string varName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">varName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">StoredProgram.GetVarValue(string)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppStoredProgram_RegisterMethod_BOOSEappTV_AppStoredProgram_MethodDef_.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppStoredProgram.RegisterMethod(BOOSEappTV.AppStoredProgram.MethodDef)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppStoredProgram.cs/#L122">View Source</a>
+  </span>
+  <a id="BOOSEappTV_AppStoredProgram_RegisterMethod_" data-uid="BOOSEappTV.AppStoredProgram.RegisterMethod*"></a>
+  <h4 id="BOOSEappTV_AppStoredProgram_RegisterMethod_BOOSEappTV_AppStoredProgram_MethodDef_" data-uid="BOOSEappTV.AppStoredProgram.RegisterMethod(BOOSEappTV.AppStoredProgram.MethodDef)">RegisterMethod(MethodDef)</h4>
+  <div class="markdown level1 summary"><p>Registers a method definition with the program.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterMethod(AppStoredProgram.MethodDef def)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BOOSEappTV.AppStoredProgram.html">AppStoredProgram</a>.<a class="xref" href="BOOSEappTV.AppStoredProgram.MethodDef.html">MethodDef</a></td>
+        <td><span class="parametername">def</span></td>
+        <td><p>The method definition to register.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">StoredProgramException</span></td>
+        <td><p>Thrown when the method name is missing.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppStoredProgram_TidyExpression_System_String_.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppStoredProgram.TidyExpression(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppStoredProgram.cs/#L214">View Source</a>
+  </span>
+  <a id="BOOSEappTV_AppStoredProgram_TidyExpression_" data-uid="BOOSEappTV.AppStoredProgram.TidyExpression*"></a>
+  <h4 id="BOOSEappTV_AppStoredProgram_TidyExpression_System_String_" data-uid="BOOSEappTV.AppStoredProgram.TidyExpression(System.String)">TidyExpression(string)</h4>
+  <div class="markdown level1 summary"><p>Normalises an expression by inserting spacing around operators.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string TidyExpression(string expr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">expr</span></td>
+        <td><p>The expression to tidy.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><p>A normalised expression string.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppStoredProgram_TryGetMethod_System_String_BOOSEappTV_AppStoredProgram_MethodDef__.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppStoredProgram.TryGetMethod(System.String%2CBOOSEappTV.AppStoredProgram.MethodDef%40)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppStoredProgram.cs/#L138">View Source</a>
+  </span>
+  <a id="BOOSEappTV_AppStoredProgram_TryGetMethod_" data-uid="BOOSEappTV.AppStoredProgram.TryGetMethod*"></a>
+  <h4 id="BOOSEappTV_AppStoredProgram_TryGetMethod_System_String_BOOSEappTV_AppStoredProgram_MethodDef__" data-uid="BOOSEappTV.AppStoredProgram.TryGetMethod(System.String,BOOSEappTV.AppStoredProgram.MethodDef@)">TryGetMethod(string, out MethodDef)</h4>
+  <div class="markdown level1 summary"><p>Attempts to retrieve a method definition by name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetMethod(string name, out AppStoredProgram.MethodDef def)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The method name.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="BOOSEappTV.AppStoredProgram.html">AppStoredProgram</a>.<a class="xref" href="BOOSEappTV.AppStoredProgram.MethodDef.html">MethodDef</a></td>
+        <td><span class="parametername">def</span></td>
+        <td><p>The resulting method definition.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><code>true</code> if the method exists; otherwise <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppStoredProgram_UpdateVariable_System_String_System_Double_.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppStoredProgram.UpdateVariable(System.String%2CSystem.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppStoredProgram.cs/#L399">View Source</a>
+  </span>
+  <a id="BOOSEappTV_AppStoredProgram_UpdateVariable_" data-uid="BOOSEappTV.AppStoredProgram.UpdateVariable*"></a>
+  <h4 id="BOOSEappTV_AppStoredProgram_UpdateVariable_System_String_System_Double_" data-uid="BOOSEappTV.AppStoredProgram.UpdateVariable(System.String,System.Double)">UpdateVariable(string, double)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void UpdateVariable(string varName, double value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">varName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">StoredProgram.UpdateVariable(string, double)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppStoredProgram_UpdateVariable_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppStoredProgram.UpdateVariable(System.String%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppStoredProgram.cs/#L385">View Source</a>
+  </span>
+  <a id="BOOSEappTV_AppStoredProgram_UpdateVariable_" data-uid="BOOSEappTV.AppStoredProgram.UpdateVariable*"></a>
+  <h4 id="BOOSEappTV_AppStoredProgram_UpdateVariable_System_String_System_Int32_" data-uid="BOOSEappTV.AppStoredProgram.UpdateVariable(System.String,System.Int32)">UpdateVariable(string, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void UpdateVariable(string varName, int value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">varName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">StoredProgram.UpdateVariable(string, int)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ilist">IList</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.icollection">ICollection</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.icloneable">ICloneable</a>
+  </div>
+  <div>
+      <span class="xref">BOOSE.IStoredProgram</span>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppStoredProgram.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppStoredProgram%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppStoredProgram.cs/#L25" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

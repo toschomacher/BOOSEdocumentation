@@ -5,11 +5,11 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class AppCircle | mysite </title>
+      <title>Class AppEndMethod | mysite </title>
       <meta name="viewport" content="width=device-width">
-      <meta name="title" content="Class AppCircle | mysite ">
+      <meta name="title" content="Class AppEndMethod | mysite ">
     
-    <meta name="description" content="Represents a circle drawing command that evaluates a radius expression at runtime and renders a circle on the canvas.">
+    <meta name="description" content="Represents an end method command that terminates the execution of a user-defined method.">
       <link rel="shortcut icon" href="../favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
@@ -76,22 +76,20 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="BOOSEappTV.AppCircle">
+            <article class="content wrap" id="_content" data-uid="BOOSEappTV.AppEndMethod">
 
 
 
-  <h1 id="BOOSEappTV_AppCircle" data-uid="BOOSEappTV.AppCircle" class="text-break">Class AppCircle</h1>
-  <div class="markdown level0 summary"><p>Represents a circle drawing command that evaluates a radius expression
-at runtime and renders a circle on the canvas.</p>
+  <h1 id="BOOSEappTV_AppEndMethod" data-uid="BOOSEappTV.AppEndMethod" class="text-break">Class AppEndMethod</h1>
+  <div class="markdown level0 summary"><p>Represents an <code>end method</code> command that terminates the execution
+of a user-defined method.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
     <div class="level1"><span class="xref">Command</span></div>
-    <div class="level2"><span class="xref">CanvasCommand</span></div>
-    <div class="level3"><span class="xref">CommandOneParameter</span></div>
-    <div class="level4"><span class="xref">AppCircle</span></div>
+    <div class="level2"><span class="xref">AppEndMethod</span></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
@@ -99,27 +97,6 @@ at runtime and renders a circle on the canvas.</p>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">CommandOneParameter.param1</span>
-    </div>
-    <div>
-      <span class="xref">CommandOneParameter.param1unprocessed</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">CommandOneParameter.CheckParameters(string[])</a>
-    </div>
-    <div>
-      <span class="xref">CanvasCommand.yPos</span>
-    </div>
-    <div>
-      <span class="xref">CanvasCommand.xPos</span>
-    </div>
-    <div>
-      <span class="xref">CanvasCommand.canvas</span>
-    </div>
-    <div>
-      <span class="xref">CanvasCommand.Canvas</span>
-    </div>
     <div>
       <span class="xref">Command.IsDouble</span>
     </div>
@@ -136,13 +113,10 @@ at runtime and renders a circle on the canvas.</p>
       <span class="xref">Command.paramsint</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Command.Set(StoredProgram, string)</a>
-    </div>
-    <div>
-      <span class="xref">Command.Compile()</span>
-    </div>
-    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Command.ProcessParameters(string)</a>
+    </div>
+    <div>
+      <span class="xref">Command.ToString()</span>
     </div>
     <div>
       <span class="xref">Command.Program</span>
@@ -180,46 +154,87 @@ at runtime and renders a circle on the canvas.</p>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="BOOSEappTV.html">BOOSEappTV</a></h6>
   <h6><strong>Assembly</strong>: BOOSEappTV.dll</h6>
-  <h5 id="BOOSEappTV_AppCircle_syntax">Syntax</h5>
+  <h5 id="BOOSEappTV_AppEndMethod_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class AppCircle : CommandOneParameter, ICommand</code></pre>
+    <pre><code class="lang-csharp hljs">public class AppEndMethod : Command, ICommand</code></pre>
   </div>
-  <h5 id="BOOSEappTV_AppCircle_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p>This command supports variable-based expressions for the radius.
-Expression evaluation is deferred until execution time in accordance
-with BOOSE’s two-pass execution model.</p>
+  <h5 id="BOOSEappTV_AppEndMethod_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This command is executed at runtime to exit the current method context
+and return control to the caller. Method scope and execution flow
+are managed by <a class="xref" href="BOOSEappTV.AppStoredProgram.html">AppStoredProgram</a>.</p>
 </div>
-  <h3 id="constructors">Constructors
-</h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppCircle__ctor.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppCircle.%23ctor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppCircle.cs/#L21">View Source</a>
-  </span>
-  <a id="BOOSEappTV_AppCircle__ctor_" data-uid="BOOSEappTV.AppCircle.#ctor*"></a>
-  <h4 id="BOOSEappTV_AppCircle__ctor" data-uid="BOOSEappTV.AppCircle.#ctor">AppCircle()</h4>
-  <div class="markdown level1 summary"><p>Initialises a new instance of the <a class="xref" href="BOOSEappTV.AppCircle.html">AppCircle</a> class.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AppCircle()</code></pre>
-  </div>
   <h3 id="methods">Methods
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppCircle_Execute.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppCircle.Execute%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppEndMethod_CheckParameters_System_String___.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppEndMethod.CheckParameters(System.String%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppCircle.cs/#L33">View Source</a>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppEndMethod.cs/#L59">View Source</a>
   </span>
-  <a id="BOOSEappTV_AppCircle_Execute_" data-uid="BOOSEappTV.AppCircle.Execute*"></a>
-  <h4 id="BOOSEappTV_AppCircle_Execute" data-uid="BOOSEappTV.AppCircle.Execute">Execute()</h4>
-  <div class="markdown level1 summary"><p>Executes the circle command by evaluating the radius expression
-and drawing the circle on the canvas.</p>
+  <a id="BOOSEappTV_AppEndMethod_CheckParameters_" data-uid="BOOSEappTV.AppEndMethod.CheckParameters*"></a>
+  <h4 id="BOOSEappTV_AppEndMethod_CheckParameters_System_String___" data-uid="BOOSEappTV.AppEndMethod.CheckParameters(System.String[])">CheckParameters(string[])</h4>
+  <div class="markdown level1 summary"><p>Performs parameter validation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void CheckParameters(string[] parameter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
+        <td><span class="parametername">parameter</span></td>
+        <td><p>The parameter array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Command.CheckParameters(string[])</a></div>
+  <h5 id="BOOSEappTV_AppEndMethod_CheckParameters_System_String____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This command does not accept parameters.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppEndMethod_Compile.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppEndMethod.Compile%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppEndMethod.cs/#L50">View Source</a>
+  </span>
+  <a id="BOOSEappTV_AppEndMethod_Compile_" data-uid="BOOSEappTV.AppEndMethod.Compile*"></a>
+  <h4 id="BOOSEappTV_AppEndMethod_Compile" data-uid="BOOSEappTV.AppEndMethod.Compile">Compile()</h4>
+  <div class="markdown level1 summary"><p>Performs compile-time processing for the <code>end method</code> command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Compile()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">BOOSE.Command.Compile()</span></div>
+  <h5 id="BOOSEappTV_AppEndMethod_Compile_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>No compile-time action is required for this command.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppEndMethod_Execute.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppEndMethod.Execute%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppEndMethod.cs/#L36">View Source</a>
+  </span>
+  <a id="BOOSEappTV_AppEndMethod_Execute_" data-uid="BOOSEappTV.AppEndMethod.Execute*"></a>
+  <h4 id="BOOSEappTV_AppEndMethod_Execute" data-uid="BOOSEappTV.AppEndMethod.Execute">Execute()</h4>
+  <div class="markdown level1 summary"><p>Executes the <code>end method</code> command at runtime.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -228,6 +243,10 @@ and drawing the circle on the canvas.</p>
   </div>
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">BOOSE.Command.Execute()</span></div>
+  <h5 id="BOOSEappTV_AppEndMethod_Execute_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method exits the current method scope and restores
+the previous execution context.</p>
+</div>
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-condensed">
     <thead>
@@ -239,50 +258,53 @@ and drawing the circle on the canvas.</p>
     <tbody>
       <tr>
         <td><span class="xref">StoredProgramException</span></td>
-        <td><p>Thrown when the radius expression cannot be evaluated.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">CanvasException</span></td>
-        <td><p>Thrown when the evaluated radius is invalid.</p>
+        <td><p>Thrown when the stored program is not of the expected type.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppCircle_ToString.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppCircle.ToString%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppEndMethod_Set_BOOSE_StoredProgram_System_String_.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppEndMethod.Set(BOOSE.StoredProgram%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppCircle.cs/#L114">View Source</a>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppEndMethod.cs/#L21">View Source</a>
   </span>
-  <a id="BOOSEappTV_AppCircle_ToString_" data-uid="BOOSEappTV.AppCircle.ToString*"></a>
-  <h4 id="BOOSEappTV_AppCircle_ToString" data-uid="BOOSEappTV.AppCircle.ToString">ToString()</h4>
-  <div class="markdown level1 summary"><p>Returns the name of the command.</p>
+  <a id="BOOSEappTV_AppEndMethod_Set_" data-uid="BOOSEappTV.AppEndMethod.Set*"></a>
+  <h4 id="BOOSEappTV_AppEndMethod_Set_BOOSE_StoredProgram_System_String_" data-uid="BOOSEappTV.AppEndMethod.Set(BOOSE.StoredProgram,System.String)">Set(StoredProgram, string)</h4>
+  <div class="markdown level1 summary"><p>Associates this command with the current stored program.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+    <pre><code class="lang-csharp hljs">public override void Set(StoredProgram program, string parameters)</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
+        <td><span class="xref">StoredProgram</span></td>
+        <td><span class="parametername">program</span></td>
+        <td><p>The active <span class="xref">BOOSE.StoredProgram</span> instance.</p>
+</td>
+      </tr>
+      <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><p>The string <code>&quot;Circle&quot;</code>.</p>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>Unused parameter string.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">BOOSE.Command.ToString()</span></div>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Command.Set(StoredProgram, string)</a></div>
   <h3 id="implements">Implements</h3>
   <div>
       <span class="xref">BOOSE.ICommand</span>
@@ -296,10 +318,10 @@ and drawing the circle on the canvas.</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppCircle.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppCircle%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppEndMethod.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppEndMethod%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppCircle.cs/#L16" class="contribution-link">View Source</a>
+                    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppEndMethod.cs/#L14" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

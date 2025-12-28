@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class AppArray | mysite </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class AppArray | mysite ">
+    
+    <meta name="description" content="Represents an array variable declaration within the BOOSE interpreter.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="BOOSEappTV Docs">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BOOSEappTV.AppArray">
+
+
+
+  <h1 id="BOOSEappTV_AppArray" data-uid="BOOSEappTV.AppArray" class="text-break">Class AppArray</h1>
+  <div class="markdown level0 summary"><p>Represents an array variable declaration within the BOOSE interpreter.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">Command</span></div>
+    <div class="level2"><span class="xref">Evaluation</span></div>
+    <div class="level3"><span class="xref">AppArray</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">ICommand</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Evaluation.expression</span>
+    </div>
+    <div>
+      <span class="xref">Evaluation.evaluatedExpression</span>
+    </div>
+    <div>
+      <span class="xref">Evaluation.varName</span>
+    </div>
+    <div>
+      <span class="xref">Evaluation.value</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Evaluation.CheckParameters(string[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Evaluation.ProcessExpression(string)</a>
+    </div>
+    <div>
+      <span class="xref">Evaluation.Expression</span>
+    </div>
+    <div>
+      <span class="xref">Evaluation.VarName</span>
+    </div>
+    <div>
+      <span class="xref">Evaluation.Value</span>
+    </div>
+    <div>
+      <span class="xref">Evaluation.Local</span>
+    </div>
+    <div>
+      <span class="xref">Command.IsDouble</span>
+    </div>
+    <div>
+      <span class="xref">Command.program</span>
+    </div>
+    <div>
+      <span class="xref">Command.parameterList</span>
+    </div>
+    <div>
+      <span class="xref">Command.parameters</span>
+    </div>
+    <div>
+      <span class="xref">Command.paramsint</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Command.ProcessParameters(string)</a>
+    </div>
+    <div>
+      <span class="xref">Command.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">Command.Program</span>
+    </div>
+    <div>
+      <span class="xref">Command.Name</span>
+    </div>
+    <div>
+      <span class="xref">Command.ParameterList</span>
+    </div>
+    <div>
+      <span class="xref">Command.Parameters</span>
+    </div>
+    <div>
+      <span class="xref">Command.Paramsint</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BOOSEappTV.html">BOOSEappTV</a></h6>
+  <h6><strong>Assembly</strong>: BOOSEappTV.dll</h6>
+  <h5 id="BOOSEappTV_AppArray_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AppArray : Evaluation, ICommand</code></pre>
+  </div>
+  <h5 id="BOOSEappTV_AppArray_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This class provides a BOOSE-correct implementation of array variables.
+Arrays are declared at compile time and do not perform any action at runtime.
+Element access and mutation are handled exclusively via the POKE and PEEK commands.</p>
+</div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppArray__ctor.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppArray.%23ctor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppArray.cs/#L47">View Source</a>
+  </span>
+  <a id="BOOSEappTV_AppArray__ctor_" data-uid="BOOSEappTV.AppArray.#ctor*"></a>
+  <h4 id="BOOSEappTV_AppArray__ctor" data-uid="BOOSEappTV.AppArray.#ctor">AppArray()</h4>
+  <div class="markdown level1 summary"><p>Initialises a new instance of the <a class="xref" href="BOOSEappTV.AppArray.html">AppArray</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AppArray()</code></pre>
+  </div>
+  <h5 id="BOOSEappTV_AppArray__ctor_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Arrays are not numeric expressions and therefore do not participate
+in expression evaluation.</p>
+</div>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppArray_ElementType.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppArray.ElementType%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppArray.cs/#L21">View Source</a>
+  </span>
+  <a id="BOOSEappTV_AppArray_ElementType_" data-uid="BOOSEappTV.AppArray.ElementType*"></a>
+  <h4 id="BOOSEappTV_AppArray_ElementType" data-uid="BOOSEappTV.AppArray.ElementType">ElementType</h4>
+  <div class="markdown level1 summary"><p>Gets the element type of the array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ElementType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="BOOSEappTV_AppArray_ElementType_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Valid values are <code>&quot;int&quot;</code> or <code>&quot;real&quot;</code>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppArray_Size.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppArray.Size%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppArray.cs/#L26">View Source</a>
+  </span>
+  <a id="BOOSEappTV_AppArray_Size_" data-uid="BOOSEappTV.AppArray.Size*"></a>
+  <h4 id="BOOSEappTV_AppArray_Size" data-uid="BOOSEappTV.AppArray.Size">Size</h4>
+  <div class="markdown level1 summary"><p>Gets the size of the array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Size { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppArray_Compile.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppArray.Compile%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppArray.cs/#L98">View Source</a>
+  </span>
+  <a id="BOOSEappTV_AppArray_Compile_" data-uid="BOOSEappTV.AppArray.Compile*"></a>
+  <h4 id="BOOSEappTV_AppArray_Compile" data-uid="BOOSEappTV.AppArray.Compile">Compile()</h4>
+  <div class="markdown level1 summary"><p>Declares the array within the stored program and allocates its storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Compile()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">BOOSE.Evaluation.Compile()</span></div>
+  <h5 id="BOOSEappTV_AppArray_Compile_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Allocation occurs at compile time in accordance with BOOSE semantics.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ParserException</span></td>
+        <td><p>Thrown if the array name is missing or already declared.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppArray_Execute.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppArray.Execute%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppArray.cs/#L126">View Source</a>
+  </span>
+  <a id="BOOSEappTV_AppArray_Execute_" data-uid="BOOSEappTV.AppArray.Execute*"></a>
+  <h4 id="BOOSEappTV_AppArray_Execute" data-uid="BOOSEappTV.AppArray.Execute">Execute()</h4>
+  <div class="markdown level1 summary"><p>Executes the array command at runtime.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Execute()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">BOOSE.Evaluation.Execute()</span></div>
+  <h5 id="BOOSEappTV_AppArray_Execute_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Arrays perform no action during execution.
+All interactions occur through POKE and PEEK commands.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppArray_GetIntValue_System_Int32_.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppArray.GetIntValue(System.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppArray.cs/#L158">View Source</a>
+  </span>
+  <a id="BOOSEappTV_AppArray_GetIntValue_" data-uid="BOOSEappTV.AppArray.GetIntValue*"></a>
+  <h4 id="BOOSEappTV_AppArray_GetIntValue_System_Int32_" data-uid="BOOSEappTV.AppArray.GetIntValue(System.Int32)">GetIntValue(int)</h4>
+  <div class="markdown level1 summary"><p>Retrieves an integer value from the specified array index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetIntValue(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The zero-based index to access.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The integer value stored at the index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppArray_GetRealValue_System_Int32_.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppArray.GetRealValue(System.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppArray.cs/#L169">View Source</a>
+  </span>
+  <a id="BOOSEappTV_AppArray_GetRealValue_" data-uid="BOOSEappTV.AppArray.GetRealValue*"></a>
+  <h4 id="BOOSEappTV_AppArray_GetRealValue_System_Int32_" data-uid="BOOSEappTV.AppArray.GetRealValue(System.Int32)">GetRealValue(int)</h4>
+  <div class="markdown level1 summary"><p>Retrieves a real (double) value from the specified array index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetRealValue(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The zero-based index to access.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><p>The real value stored at the index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppArray_Set_BOOSE_StoredProgram_System_String_.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppArray.Set(BOOSE.StoredProgram%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppArray.cs/#L65">View Source</a>
+  </span>
+  <a id="BOOSEappTV_AppArray_Set_" data-uid="BOOSEappTV.AppArray.Set*"></a>
+  <h4 id="BOOSEappTV_AppArray_Set_BOOSE_StoredProgram_System_String_" data-uid="BOOSEappTV.AppArray.Set(BOOSE.StoredProgram,System.String)">Set(StoredProgram, string)</h4>
+  <div class="markdown level1 summary"><p>Parses and stores the parameters required to declare the array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Set(StoredProgram program, string parameters)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">StoredProgram</span></td>
+        <td><span class="parametername">program</span></td>
+        <td><p>The current <span class="xref">BOOSE.StoredProgram</span> instance.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>The parameter string defining the array type, name, and size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Command.Set(StoredProgram, string)</a></div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ParserException</span></td>
+        <td><p>Thrown when the declaration syntax is invalid or incomplete.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppArray_SetValue_System_Int32_System_Double_.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppArray.SetValue(System.Int32%2CSystem.Double)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppArray.cs/#L147">View Source</a>
+  </span>
+  <a id="BOOSEappTV_AppArray_SetValue_" data-uid="BOOSEappTV.AppArray.SetValue*"></a>
+  <h4 id="BOOSEappTV_AppArray_SetValue_System_Int32_System_Double_" data-uid="BOOSEappTV.AppArray.SetValue(System.Int32,System.Double)">SetValue(int, double)</h4>
+  <div class="markdown level1 summary"><p>Sets a real (double) value at the specified array index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetValue(int index, double value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The zero-based index to update.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The real value to assign.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppArray_SetValue_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppArray.SetValue(System.Int32%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppArray.cs/#L136">View Source</a>
+  </span>
+  <a id="BOOSEappTV_AppArray_SetValue_" data-uid="BOOSEappTV.AppArray.SetValue*"></a>
+  <h4 id="BOOSEappTV_AppArray_SetValue_System_Int32_System_Int32_" data-uid="BOOSEappTV.AppArray.SetValue(System.Int32,System.Int32)">SetValue(int, int)</h4>
+  <div class="markdown level1 summary"><p>Sets an integer value at the specified array index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetValue(int index, int value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The zero-based index to update.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The integer value to assign.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">BOOSE.ICommand</span>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppArray.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppArray%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppArray.cs/#L13" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Class BOOSEForm | mysite ">
     
-    <meta name="description" content="Represents the main form of the BOOSEappTV application. Provides drawing functionality and handles user interactions.">
+    <meta name="description" content="Represents the main form of the BOOSEappTV application.">
       <link rel="shortcut icon" href="../favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
@@ -81,8 +81,7 @@
 
 
   <h1 id="BOOSEappTV_BOOSEForm" data-uid="BOOSEappTV.BOOSEForm" class="text-break">Class BOOSEForm</h1>
-  <div class="markdown level0 summary"><p>Represents the main form of the BOOSEappTV application.
-Provides drawing functionality and handles user interactions.</p>
+  <div class="markdown level0 summary"><p>Represents the main form of the BOOSEappTV application.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -1654,6 +1653,12 @@ Provides drawing functionality and handles user interactions.</p>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class BOOSEForm : Form, IDropTarget, ISynchronizeInvoke, IWin32Window, IBindableComponent, IComponent, IDisposable, IContainerControl</code></pre>
   </div>
+  <h5 id="BOOSEappTV_BOOSEForm_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This form provides the user interface for entering BOOSE commands,
+compiling and executing them, and rendering graphical output on
+a canvas. It also manages application state, user interaction,
+and integration with the BOOSE interpreter components.</p>
+</div>
   <h3 id="constructors">Constructors
 </h3>
   <span class="small pull-right mobile-hide">
@@ -1661,18 +1666,21 @@ Provides drawing functionality and handles user interactions.</p>
     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_BOOSEForm__ctor.md&amp;value=---%0Auid%3A%20BOOSEappTV.BOOSEForm.%23ctor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/BOOSEForm.cs/#L25">View Source</a>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/BOOSEForm.cs/#L66">View Source</a>
   </span>
   <a id="BOOSEappTV_BOOSEForm__ctor_" data-uid="BOOSEappTV.BOOSEForm.#ctor*"></a>
   <h4 id="BOOSEappTV_BOOSEForm__ctor" data-uid="BOOSEappTV.BOOSEForm.#ctor">BOOSEForm()</h4>
-  <div class="markdown level1 summary"><p>Initialises a new instance of the BOOSEForm class.
-Sets up the form and initialises refferences and variables.</p>
+  <div class="markdown level1 summary"><p>Initialises a new instance of the <a class="xref" href="BOOSEappTV.BOOSEForm.html">BOOSEForm</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public BOOSEForm()</code></pre>
   </div>
+  <h5 id="BOOSEappTV_BOOSEForm__ctor_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Sets up the form, initialises the canvas, console, command factory,
+stored program, and parser.</p>
+</div>
   <h3 id="methods">Methods
 </h3>
   <span class="small pull-right mobile-hide">
@@ -1716,11 +1724,11 @@ Sets up the form and initialises refferences and variables.</p>
     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_BOOSEForm_OnPaint_System_Windows_Forms_PaintEventArgs_.md&amp;value=---%0Auid%3A%20BOOSEappTV.BOOSEForm.OnPaint(System.Windows.Forms.PaintEventArgs)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/BOOSEForm.cs/#L39">View Source</a>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/BOOSEForm.cs/#L80">View Source</a>
   </span>
   <a id="BOOSEappTV_BOOSEForm_OnPaint_" data-uid="BOOSEappTV.BOOSEForm.OnPaint*"></a>
   <h4 id="BOOSEappTV_BOOSEForm_OnPaint_System_Windows_Forms_PaintEventArgs_" data-uid="BOOSEappTV.BOOSEForm.OnPaint(System.Windows.Forms.PaintEventArgs)">OnPaint(PaintEventArgs)</h4>
-  <div class="markdown level1 summary"><p>This method is called when the form (application's main window) needs to be repainted.</p>
+  <div class="markdown level1 summary"><p>Called when the form needs to be repainted.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -1740,7 +1748,7 @@ Sets up the form and initialises refferences and variables.</p>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.painteventargs">PaintEventArgs</a></td>
         <td><span class="parametername">e</span></td>
-        <td><p>Paint event data including graphics context.</p>
+        <td><p>Paint event data including the graphics context.</p>
 </td>
       </tr>
     </tbody>
@@ -1752,11 +1760,11 @@ Sets up the form and initialises refferences and variables.</p>
     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_BOOSEForm_OnResize_System_EventArgs_.md&amp;value=---%0Auid%3A%20BOOSEappTV.BOOSEForm.OnResize(System.EventArgs)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/BOOSEForm.cs/#L50">View Source</a>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/BOOSEForm.cs/#L90">View Source</a>
   </span>
   <a id="BOOSEappTV_BOOSEForm_OnResize_" data-uid="BOOSEappTV.BOOSEForm.OnResize*"></a>
   <h4 id="BOOSEappTV_BOOSEForm_OnResize_System_EventArgs_" data-uid="BOOSEappTV.BOOSEForm.OnResize(System.EventArgs)">OnResize(EventArgs)</h4>
-  <div class="markdown level1 summary"><p>This method is called when the form (application's main window) is resized.</p>
+  <div class="markdown level1 summary"><p>Called when the form is resized.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -1776,7 +1784,7 @@ Sets up the form and initialises refferences and variables.</p>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventargs">EventArgs</a></td>
         <td><span class="parametername">e</span></td>
-        <td><p>Paint event data including graphics context.</p>
+        <td><p>Event data.</p>
 </td>
       </tr>
     </tbody>

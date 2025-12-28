@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Class AppConsole | mysite ">
     
-    
+    <meta name="description" content="Provides a simple console output facility backed by a .">
       <link rel="shortcut icon" href="../favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
@@ -81,7 +81,8 @@
 
 
   <h1 id="BOOSEappTV_AppConsole" data-uid="BOOSEappTV.AppConsole" class="text-break">Class AppConsole</h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Provides a simple console output facility backed by a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.richtextbox">RichTextBox</a>.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -118,18 +119,70 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static class AppConsole</code></pre>
   </div>
+  <h5 id="BOOSEappTV_AppConsole_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This class is used to display diagnostic and debug output within the
+BOOSEappTV user interface. It supports timestamped output and ensures
+thread-safe updates to the underlying control.</p>
+</div>
   <h3 id="methods">Methods
 </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppConsole_Clear.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppConsole.Clear%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppConsole.cs/#L114">View Source</a>
+  </span>
+  <a id="BOOSEappTV_AppConsole_Clear_" data-uid="BOOSEappTV.AppConsole.Clear*"></a>
+  <h4 id="BOOSEappTV_AppConsole_Clear" data-uid="BOOSEappTV.AppConsole.Clear">Clear()</h4>
+  <div class="markdown level1 summary"><p>Clears both UI console and test buffer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Clear()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppConsole_GetOutput.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppConsole.GetOutput%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppConsole.cs/#L106">View Source</a>
+  </span>
+  <a id="BOOSEappTV_AppConsole_GetOutput_" data-uid="BOOSEappTV.AppConsole.GetOutput*"></a>
+  <h4 id="BOOSEappTV_AppConsole_GetOutput" data-uid="BOOSEappTV.AppConsole.GetOutput">GetOutput()</h4>
+  <div class="markdown level1 summary"><p>Returns all console output written so far (test support).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetOutput()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppConsole_Initialize_System_Windows_Forms_RichTextBox_.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppConsole.Initialize(System.Windows.Forms.RichTextBox)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppConsole.cs/#L14">View Source</a>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppConsole.cs/#L35">View Source</a>
   </span>
   <a id="BOOSEappTV_AppConsole_Initialize_" data-uid="BOOSEappTV.AppConsole.Initialize*"></a>
   <h4 id="BOOSEappTV_AppConsole_Initialize_System_Windows_Forms_RichTextBox_" data-uid="BOOSEappTV.AppConsole.Initialize(System.Windows.Forms.RichTextBox)">Initialize(RichTextBox)</h4>
-  <div class="markdown level1 summary"><p>Initialize the RichTextBox console.</p>
+  <div class="markdown level1 summary"><p>Initialises the RichTextBox console.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -149,20 +202,25 @@
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.richtextbox">RichTextBox</a></td>
         <td><span class="parametername">box</span></td>
-        <td></td>
+        <td><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.richtextbox">RichTextBox</a> control to use for console output.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="BOOSEappTV_AppConsole_Initialize_System_Windows_Forms_RichTextBox__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method configures the visual appearance of the console and
+sets it to read-only mode.</p>
+</div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppConsole_WriteLine_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppConsole.WriteLine(System.String%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppConsole.cs/#L26">View Source</a>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppConsole.cs/#L55">View Source</a>
   </span>
   <a id="BOOSEappTV_AppConsole_WriteLine_" data-uid="BOOSEappTV.AppConsole.WriteLine*"></a>
   <h4 id="BOOSEappTV_AppConsole_WriteLine_System_String_System_Boolean_" data-uid="BOOSEappTV.AppConsole.WriteLine(System.String,System.Boolean)">WriteLine(string, bool)</h4>
-  <div class="markdown level1 summary"><p>Write a message to the RichTextBox console.</p>
+  <div class="markdown level1 summary"><p>Writes a line of text to the console.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -182,15 +240,21 @@
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">message</span></td>
-        <td></td>
+        <td><p>The message to write.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">includeTimestamp</span></td>
-        <td></td>
+        <td><p><code>true</code> to prefix the message with a timestamp; otherwise <code>false</code>.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="BOOSEappTV_AppConsole_WriteLine_System_String_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method is thread-safe and will marshal the call onto the
+UI thread if required.</p>
+</div>
 
 </article>
           </div>
@@ -203,7 +267,7 @@
                     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppConsole.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppConsole%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppConsole.cs/#L7" class="contribution-link">View Source</a>
+                    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppConsole.cs/#L15" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

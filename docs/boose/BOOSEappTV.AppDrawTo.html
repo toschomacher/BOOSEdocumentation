@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Class AppDrawTo | mysite ">
     
-    
+    <meta name="description" content="Represents a drawing command that draws a line from the current cursor position to a specified coordinate.">
       <link rel="shortcut icon" href="../favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
@@ -81,7 +81,9 @@
 
 
   <h1 id="BOOSEappTV_AppDrawTo" data-uid="BOOSEappTV.AppDrawTo" class="text-break">Class AppDrawTo</h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Represents a drawing command that draws a line from the current
+cursor position to a specified coordinate.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -192,6 +194,11 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class AppDrawTo : CommandTwoParameters, ICommand</code></pre>
   </div>
+  <h5 id="BOOSEappTV_AppDrawTo_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This command evaluates its parameters at runtime and draws a line
+using integer coordinates only. It follows BOOSE canvas command
+semantics and performs bounds checking before drawing.</p>
+</div>
   <h3 id="constructors">Constructors
 </h3>
   <span class="small pull-right mobile-hide">
@@ -199,11 +206,12 @@
     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppDrawTo__ctor.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppDrawTo.%23ctor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppDrawTo.cs/#L19">View Source</a>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppDrawTo.cs/#L36">View Source</a>
   </span>
   <a id="BOOSEappTV_AppDrawTo__ctor_" data-uid="BOOSEappTV.AppDrawTo.#ctor*"></a>
   <h4 id="BOOSEappTV_AppDrawTo__ctor" data-uid="BOOSEappTV.AppDrawTo.#ctor">AppDrawTo()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initialises a new instance of the <a class="xref" href="BOOSEappTV.AppDrawTo.html">AppDrawTo</a> class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -214,11 +222,13 @@
     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppDrawTo__ctor_BOOSE_Canvas_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppDrawTo.%23ctor(BOOSE.Canvas%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppDrawTo.cs/#L20">View Source</a>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppDrawTo.cs/#L45">View Source</a>
   </span>
   <a id="BOOSEappTV_AppDrawTo__ctor_" data-uid="BOOSEappTV.AppDrawTo.#ctor*"></a>
   <h4 id="BOOSEappTV_AppDrawTo__ctor_BOOSE_Canvas_System_Int32_System_Int32_" data-uid="BOOSEappTV.AppDrawTo.#ctor(BOOSE.Canvas,System.Int32,System.Int32)">AppDrawTo(Canvas, int, int)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initialises a new instance of the <a class="xref" href="BOOSEappTV.AppDrawTo.html">AppDrawTo</a> class
+with an explicit canvas and coordinates.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -237,17 +247,20 @@
       <tr>
         <td><span class="xref">Canvas</span></td>
         <td><span class="parametername">c</span></td>
-        <td></td>
+        <td><p>The canvas on which to draw.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">x</span></td>
-        <td></td>
+        <td><p>The destination X-coordinate.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">y</span></td>
-        <td></td>
+        <td><p>The destination Y-coordinate.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -258,11 +271,12 @@
     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppDrawTo_X.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppDrawTo.X%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppDrawTo.cs/#L15">View Source</a>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppDrawTo.cs/#L26">View Source</a>
   </span>
   <a id="BOOSEappTV_AppDrawTo_X_" data-uid="BOOSEappTV.AppDrawTo.X*"></a>
   <h4 id="BOOSEappTV_AppDrawTo_X" data-uid="BOOSEappTV.AppDrawTo.X">X</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the X-coordinate of the destination point.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -288,11 +302,12 @@
     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppDrawTo_Y.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppDrawTo.Y%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppDrawTo.cs/#L17">View Source</a>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppDrawTo.cs/#L31">View Source</a>
   </span>
   <a id="BOOSEappTV_AppDrawTo_Y_" data-uid="BOOSEappTV.AppDrawTo.Y*"></a>
   <h4 id="BOOSEappTV_AppDrawTo_Y" data-uid="BOOSEappTV.AppDrawTo.Y">Y</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the Y-coordinate of the destination point.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -320,11 +335,13 @@
     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppDrawTo_Execute.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppDrawTo.Execute%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppDrawTo.cs/#L26">View Source</a>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppDrawTo.cs/#L59">View Source</a>
   </span>
   <a id="BOOSEappTV_AppDrawTo_Execute_" data-uid="BOOSEappTV.AppDrawTo.Execute*"></a>
   <h4 id="BOOSEappTV_AppDrawTo_Execute" data-uid="BOOSEappTV.AppDrawTo.Execute">Execute()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Executes the draw-to command by evaluating parameters
+and drawing a line on the canvas.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -332,6 +349,23 @@
   </div>
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">BOOSE.Command.Execute()</span></div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CanvasException</span></td>
+        <td><p>Thrown when non-integer coordinates are supplied or
+when the coordinates lie outside the canvas bounds.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="implements">Implements</h3>
   <div>
       <span class="xref">BOOSE.ICommand</span>
@@ -348,7 +382,7 @@
                     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppDrawTo.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppDrawTo%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppDrawTo.cs/#L10" class="contribution-link">View Source</a>
+                    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppDrawTo.cs/#L19" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

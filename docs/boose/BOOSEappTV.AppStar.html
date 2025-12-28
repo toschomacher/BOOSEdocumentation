@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Class AppStar | mysite ">
     
-    <meta name="description" content="Command to draw a star shape using IAppCanvas.">
+    <meta name="description" content="Represents a star drawing command.">
       <link rel="shortcut icon" href="../favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
@@ -81,7 +81,7 @@
 
 
   <h1 id="BOOSEappTV_AppStar" data-uid="BOOSEappTV.AppStar" class="text-break">Class AppStar</h1>
-  <div class="markdown level0 summary"><p>Command to draw a star shape using IAppCanvas.</p>
+  <div class="markdown level0 summary"><p>Represents a star drawing command.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -193,60 +193,11 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class AppStar : CommandTwoParameters, ICommand</code></pre>
   </div>
-  <h3 id="constructors">Constructors
-</h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppStar__ctor.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppStar.%23ctor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppStar.cs/#L18">View Source</a>
-  </span>
-  <a id="BOOSEappTV_AppStar__ctor_" data-uid="BOOSEappTV.AppStar.#ctor*"></a>
-  <h4 id="BOOSEappTV_AppStar__ctor" data-uid="BOOSEappTV.AppStar.#ctor">AppStar()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AppStar()</code></pre>
-  </div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppStar__ctor_BOOSE_Canvas_System_Int32_.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppStar.%23ctor(BOOSE.Canvas%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppStar.cs/#L20">View Source</a>
-  </span>
-  <a id="BOOSEappTV_AppStar__ctor_" data-uid="BOOSEappTV.AppStar.#ctor*"></a>
-  <h4 id="BOOSEappTV_AppStar__ctor_BOOSE_Canvas_System_Int32_" data-uid="BOOSEappTV.AppStar.#ctor(BOOSE.Canvas,System.Int32)">AppStar(Canvas, int)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AppStar(Canvas c, int starSize)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">Canvas</span></td>
-        <td><span class="parametername">c</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><span class="parametername">starSize</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+  <h5 id="BOOSEappTV_AppStar_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This command draws a star shape on the canvas using a specified size
+and fill mode. The size expression is evaluated at runtime, and the
+fill parameter must be a boolean literal or numeric equivalent.</p>
+</div>
   <h3 id="methods">Methods
 </h3>
   <span class="small pull-right mobile-hide">
@@ -254,11 +205,12 @@
     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppStar_Execute.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppStar.Execute%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppStar.cs/#L25">View Source</a>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppStar.cs/#L29">View Source</a>
   </span>
   <a id="BOOSEappTV_AppStar_Execute_" data-uid="BOOSEappTV.AppStar.Execute*"></a>
   <h4 id="BOOSEappTV_AppStar_Execute" data-uid="BOOSEappTV.AppStar.Execute">Execute()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Executes the star drawing command.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -266,6 +218,27 @@
   </div>
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">BOOSE.Command.Execute()</span></div>
+  <h5 id="BOOSEappTV_AppStar_Execute_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method evaluates the size and fill parameters at runtime and
+delegates the actual drawing to the <a class="xref" href="BOOSEappTV.IAppCanvas.html">IAppCanvas</a> implementation.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">CanvasException</span></td>
+        <td><p>Thrown when the canvas does not support star drawing, when the size
+is invalid, or when the fill parameter is not a valid boolean.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="implements">Implements</h3>
   <div>
       <span class="xref">BOOSE.ICommand</span>
@@ -282,7 +255,7 @@
                     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppStar.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppStar%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppStar.cs/#L14" class="contribution-link">View Source</a>
+                    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppStar.cs/#L16" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

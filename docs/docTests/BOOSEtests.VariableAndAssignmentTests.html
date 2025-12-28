@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class VariableAndAssignmentTests | mysite </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class VariableAndAssignmentTests | mysite ">
+    
+    <meta name="description" content="Unit tests covering variable declarations, assignments, and expression evaluation in BOOSE programs.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="BOOSETests Docs">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BOOSEtests.VariableAndAssignmentTests">
+
+
+
+  <h1 id="BOOSEtests_VariableAndAssignmentTests" data-uid="BOOSEtests.VariableAndAssignmentTests" class="text-break">Class VariableAndAssignmentTests</h1>
+  <div class="markdown level0 summary"><p>Unit tests covering variable declarations, assignments,
+and expression evaluation in BOOSE programs.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">VariableAndAssignmentTests</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BOOSEtests.html">BOOSEtests</a></h6>
+  <h6><strong>Assembly</strong>: BOOSEtests.dll</h6>
+  <h5 id="BOOSEtests_VariableAndAssignmentTests_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestClass]
+public class VariableAndAssignmentTests</code></pre>
+  </div>
+  <h5 id="BOOSEtests_VariableAndAssignmentTests_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>These tests validate BOOSE’s two-pass execution model:</p>
+<ol><li>
+Variables are declared and registered during parsing and compilation.
+</li><li>
+Expressions are evaluated and assignments executed at runtime.
+</li></ol>
+The tests cover integer, real, and boolean variables,
+including reassignment and expression chaining.
+</div>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEtests_VariableAndAssignmentTests_Assignment_UsesLatestVariableValue.md&amp;value=---%0Auid%3A%20BOOSEtests.VariableAndAssignmentTests.Assignment_UsesLatestVariableValue%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEtests/VariableAndAssignmentTests.cs/#L163">View Source</a>
+  </span>
+  <a id="BOOSEtests_VariableAndAssignmentTests_Assignment_UsesLatestVariableValue_" data-uid="BOOSEtests.VariableAndAssignmentTests.Assignment_UsesLatestVariableValue*"></a>
+  <h4 id="BOOSEtests_VariableAndAssignmentTests_Assignment_UsesLatestVariableValue" data-uid="BOOSEtests.VariableAndAssignmentTests.Assignment_UsesLatestVariableValue">Assignment_UsesLatestVariableValue()</h4>
+  <div class="markdown level1 summary"><p>Verifies that assignments always use the most recent
+value of a variable when evaluating expressions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void Assignment_UsesLatestVariableValue()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEtests_VariableAndAssignmentTests_BooleanAssignment_CanBeUpdated.md&amp;value=---%0Auid%3A%20BOOSEtests.VariableAndAssignmentTests.BooleanAssignment_CanBeUpdated%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEtests/VariableAndAssignmentTests.cs/#L147">View Source</a>
+  </span>
+  <a id="BOOSEtests_VariableAndAssignmentTests_BooleanAssignment_CanBeUpdated_" data-uid="BOOSEtests.VariableAndAssignmentTests.BooleanAssignment_CanBeUpdated*"></a>
+  <h4 id="BOOSEtests_VariableAndAssignmentTests_BooleanAssignment_CanBeUpdated" data-uid="BOOSEtests.VariableAndAssignmentTests.BooleanAssignment_CanBeUpdated">BooleanAssignment_CanBeUpdated()</h4>
+  <div class="markdown level1 summary"><p>Verifies that a boolean variable can be reassigned
+to a new value at runtime.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void BooleanAssignment_CanBeUpdated()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEtests_VariableAndAssignmentTests_BooleanDeclaration_AndAssignment_WorksCorrectly.md&amp;value=---%0Auid%3A%20BOOSEtests.VariableAndAssignmentTests.BooleanDeclaration_AndAssignment_WorksCorrectly%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEtests/VariableAndAssignmentTests.cs/#L130">View Source</a>
+  </span>
+  <a id="BOOSEtests_VariableAndAssignmentTests_BooleanDeclaration_AndAssignment_WorksCorrectly_" data-uid="BOOSEtests.VariableAndAssignmentTests.BooleanDeclaration_AndAssignment_WorksCorrectly*"></a>
+  <h4 id="BOOSEtests_VariableAndAssignmentTests_BooleanDeclaration_AndAssignment_WorksCorrectly" data-uid="BOOSEtests.VariableAndAssignmentTests.BooleanDeclaration_AndAssignment_WorksCorrectly">BooleanDeclaration_AndAssignment_WorksCorrectly()</h4>
+  <div class="markdown level1 summary"><p>Verifies correct declaration and evaluation of
+boolean variables using logical operators.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void BooleanDeclaration_AndAssignment_WorksCorrectly()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEtests_VariableAndAssignmentTests_IntAssignment_UpdatesValueAtRuntime.md&amp;value=---%0Auid%3A%20BOOSEtests.VariableAndAssignmentTests.IntAssignment_UpdatesValueAtRuntime%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEtests/VariableAndAssignmentTests.cs/#L79">View Source</a>
+  </span>
+  <a id="BOOSEtests_VariableAndAssignmentTests_IntAssignment_UpdatesValueAtRuntime_" data-uid="BOOSEtests.VariableAndAssignmentTests.IntAssignment_UpdatesValueAtRuntime*"></a>
+  <h4 id="BOOSEtests_VariableAndAssignmentTests_IntAssignment_UpdatesValueAtRuntime" data-uid="BOOSEtests.VariableAndAssignmentTests.IntAssignment_UpdatesValueAtRuntime">IntAssignment_UpdatesValueAtRuntime()</h4>
+  <div class="markdown level1 summary"><p>Verifies that an integer variable can be reassigned
+using an arithmetic expression at runtime.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void IntAssignment_UpdatesValueAtRuntime()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEtests_VariableAndAssignmentTests_IntDeclaration_AssignsInitialValue.md&amp;value=---%0Auid%3A%20BOOSEtests.VariableAndAssignmentTests.IntDeclaration_AssignsInitialValue%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEtests/VariableAndAssignmentTests.cs/#L66">View Source</a>
+  </span>
+  <a id="BOOSEtests_VariableAndAssignmentTests_IntDeclaration_AssignsInitialValue_" data-uid="BOOSEtests.VariableAndAssignmentTests.IntDeclaration_AssignsInitialValue*"></a>
+  <h4 id="BOOSEtests_VariableAndAssignmentTests_IntDeclaration_AssignsInitialValue" data-uid="BOOSEtests.VariableAndAssignmentTests.IntDeclaration_AssignsInitialValue">IntDeclaration_AssignsInitialValue()</h4>
+  <div class="markdown level1 summary"><p>Verifies that an integer variable declared with
+an initial value is correctly assigned at runtime.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void IntDeclaration_AssignsInitialValue()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEtests_VariableAndAssignmentTests_RealDeclaration_AssignsInitialValue.md&amp;value=---%0Auid%3A%20BOOSEtests.VariableAndAssignmentTests.RealDeclaration_AssignsInitialValue%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEtests/VariableAndAssignmentTests.cs/#L95">View Source</a>
+  </span>
+  <a id="BOOSEtests_VariableAndAssignmentTests_RealDeclaration_AssignsInitialValue_" data-uid="BOOSEtests.VariableAndAssignmentTests.RealDeclaration_AssignsInitialValue*"></a>
+  <h4 id="BOOSEtests_VariableAndAssignmentTests_RealDeclaration_AssignsInitialValue" data-uid="BOOSEtests.VariableAndAssignmentTests.RealDeclaration_AssignsInitialValue">RealDeclaration_AssignsInitialValue()</h4>
+  <div class="markdown level1 summary"><p>Verifies that a real variable declared with an initial
+floating-point value is stored correctly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void RealDeclaration_AssignsInitialValue()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEtests_VariableAndAssignmentTests_RealExpression_EvaluatesCorrectly.md&amp;value=---%0Auid%3A%20BOOSEtests.VariableAndAssignmentTests.RealExpression_EvaluatesCorrectly%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEtests/VariableAndAssignmentTests.cs/#L112">View Source</a>
+  </span>
+  <a id="BOOSEtests_VariableAndAssignmentTests_RealExpression_EvaluatesCorrectly_" data-uid="BOOSEtests.VariableAndAssignmentTests.RealExpression_EvaluatesCorrectly*"></a>
+  <h4 id="BOOSEtests_VariableAndAssignmentTests_RealExpression_EvaluatesCorrectly" data-uid="BOOSEtests.VariableAndAssignmentTests.RealExpression_EvaluatesCorrectly">RealExpression_EvaluatesCorrectly()</h4>
+  <div class="markdown level1 summary"><p>Verifies that arithmetic expressions involving real
+variables are evaluated correctly at runtime.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void RealExpression_EvaluatesCorrectly()</code></pre>
+  </div>
+  <h5 id="BOOSEtests_VariableAndAssignmentTests_RealExpression_EvaluatesCorrectly_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This test uses an approximate comparison to account
+for floating-point precision.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEtests_VariableAndAssignmentTests_Setup.md&amp;value=---%0Auid%3A%20BOOSEtests.VariableAndAssignmentTests.Setup%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEtests/VariableAndAssignmentTests.cs/#L54">View Source</a>
+  </span>
+  <a id="BOOSEtests_VariableAndAssignmentTests_Setup_" data-uid="BOOSEtests.VariableAndAssignmentTests.Setup*"></a>
+  <h4 id="BOOSEtests_VariableAndAssignmentTests_Setup" data-uid="BOOSEtests.VariableAndAssignmentTests.Setup">Setup()</h4>
+  <div class="markdown level1 summary"><p>Creates a fresh execution environment before each test.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestInitialize]
+public void Setup()</code></pre>
+  </div>
+  <h5 id="BOOSEtests_VariableAndAssignmentTests_Setup_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A new canvas, stored program, and parser are created
+to ensure tests are isolated and deterministic.</p>
+</div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEtests_VariableAndAssignmentTests.md&amp;value=---%0Auid%3A%20BOOSEtests.VariableAndAssignmentTests%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEtests/VariableAndAssignmentTests.cs/#L27" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class ExpressionEvaluationTests | mysite </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class ExpressionEvaluationTests | mysite ">
+    
+    <meta name="description" content="Unit tests for expression evaluation within the BOOSE runtime.">
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="png" src="../logo.png" alt="BOOSETests Docs">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="BOOSEtests.ExpressionEvaluationTests">
+
+
+
+  <h1 id="BOOSEtests_ExpressionEvaluationTests" data-uid="BOOSEtests.ExpressionEvaluationTests" class="text-break">Class ExpressionEvaluationTests</h1>
+  <div class="markdown level0 summary"><p>Unit tests for expression evaluation within the BOOSE runtime.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">ExpressionEvaluationTests</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="BOOSEtests.html">BOOSEtests</a></h6>
+  <h6><strong>Assembly</strong>: BOOSEtests.dll</h6>
+  <h5 id="BOOSEtests_ExpressionEvaluationTests_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestClass]
+public class ExpressionEvaluationTests</code></pre>
+  </div>
+  <h5 id="BOOSEtests_ExpressionEvaluationTests_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>These tests verify correct evaluation of integer, real, boolean,
+and relational expressions. They ensure that operator precedence,
+variable substitution, and mixed-type expressions behave as
+expected during runtime execution.</p>
+</div>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEtests_ExpressionEvaluationTests_BooleanExpression_AndOperator.md&amp;value=---%0Auid%3A%20BOOSEtests.ExpressionEvaluationTests.BooleanExpression_AndOperator%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEtests/ExpressionEvaluationTests.cs/#L136">View Source</a>
+  </span>
+  <a id="BOOSEtests_ExpressionEvaluationTests_BooleanExpression_AndOperator_" data-uid="BOOSEtests.ExpressionEvaluationTests.BooleanExpression_AndOperator*"></a>
+  <h4 id="BOOSEtests_ExpressionEvaluationTests_BooleanExpression_AndOperator" data-uid="BOOSEtests.ExpressionEvaluationTests.BooleanExpression_AndOperator">BooleanExpression_AndOperator()</h4>
+  <div class="markdown level1 summary"><p>Verifies correct evaluation of the logical AND operator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void BooleanExpression_AndOperator()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEtests_ExpressionEvaluationTests_BooleanExpression_NotOperator.md&amp;value=---%0Auid%3A%20BOOSEtests.ExpressionEvaluationTests.BooleanExpression_NotOperator%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEtests/ExpressionEvaluationTests.cs/#L168">View Source</a>
+  </span>
+  <a id="BOOSEtests_ExpressionEvaluationTests_BooleanExpression_NotOperator_" data-uid="BOOSEtests.ExpressionEvaluationTests.BooleanExpression_NotOperator*"></a>
+  <h4 id="BOOSEtests_ExpressionEvaluationTests_BooleanExpression_NotOperator" data-uid="BOOSEtests.ExpressionEvaluationTests.BooleanExpression_NotOperator">BooleanExpression_NotOperator()</h4>
+  <div class="markdown level1 summary"><p>Verifies correct evaluation of the logical NOT operator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void BooleanExpression_NotOperator()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEtests_ExpressionEvaluationTests_BooleanExpression_OrOperator.md&amp;value=---%0Auid%3A%20BOOSEtests.ExpressionEvaluationTests.BooleanExpression_OrOperator%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEtests/ExpressionEvaluationTests.cs/#L152">View Source</a>
+  </span>
+  <a id="BOOSEtests_ExpressionEvaluationTests_BooleanExpression_OrOperator_" data-uid="BOOSEtests.ExpressionEvaluationTests.BooleanExpression_OrOperator*"></a>
+  <h4 id="BOOSEtests_ExpressionEvaluationTests_BooleanExpression_OrOperator" data-uid="BOOSEtests.ExpressionEvaluationTests.BooleanExpression_OrOperator">BooleanExpression_OrOperator()</h4>
+  <div class="markdown level1 summary"><p>Verifies correct evaluation of the logical OR operator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void BooleanExpression_OrOperator()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEtests_ExpressionEvaluationTests_IntExpression_RespectsOperatorPrecedence.md&amp;value=---%0Auid%3A%20BOOSEtests.ExpressionEvaluationTests.IntExpression_RespectsOperatorPrecedence%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEtests/ExpressionEvaluationTests.cs/#L55">View Source</a>
+  </span>
+  <a id="BOOSEtests_ExpressionEvaluationTests_IntExpression_RespectsOperatorPrecedence_" data-uid="BOOSEtests.ExpressionEvaluationTests.IntExpression_RespectsOperatorPrecedence*"></a>
+  <h4 id="BOOSEtests_ExpressionEvaluationTests_IntExpression_RespectsOperatorPrecedence" data-uid="BOOSEtests.ExpressionEvaluationTests.IntExpression_RespectsOperatorPrecedence">IntExpression_RespectsOperatorPrecedence()</h4>
+  <div class="markdown level1 summary"><p>Verifies that integer expressions respect standard operator precedence.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void IntExpression_RespectsOperatorPrecedence()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEtests_ExpressionEvaluationTests_IntExpression_UsesVariablesCorrectly.md&amp;value=---%0Auid%3A%20BOOSEtests.ExpressionEvaluationTests.IntExpression_UsesVariablesCorrectly%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEtests/ExpressionEvaluationTests.cs/#L85">View Source</a>
+  </span>
+  <a id="BOOSEtests_ExpressionEvaluationTests_IntExpression_UsesVariablesCorrectly_" data-uid="BOOSEtests.ExpressionEvaluationTests.IntExpression_UsesVariablesCorrectly*"></a>
+  <h4 id="BOOSEtests_ExpressionEvaluationTests_IntExpression_UsesVariablesCorrectly" data-uid="BOOSEtests.ExpressionEvaluationTests.IntExpression_UsesVariablesCorrectly">IntExpression_UsesVariablesCorrectly()</h4>
+  <div class="markdown level1 summary"><p>Verifies that integer expressions correctly use the values
+of previously declared variables.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void IntExpression_UsesVariablesCorrectly()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEtests_ExpressionEvaluationTests_IntExpression_WithParentheses_EvaluatesCorrectly.md&amp;value=---%0Auid%3A%20BOOSEtests.ExpressionEvaluationTests.IntExpression_WithParentheses_EvaluatesCorrectly%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEtests/ExpressionEvaluationTests.cs/#L70">View Source</a>
+  </span>
+  <a id="BOOSEtests_ExpressionEvaluationTests_IntExpression_WithParentheses_EvaluatesCorrectly_" data-uid="BOOSEtests.ExpressionEvaluationTests.IntExpression_WithParentheses_EvaluatesCorrectly*"></a>
+  <h4 id="BOOSEtests_ExpressionEvaluationTests_IntExpression_WithParentheses_EvaluatesCorrectly" data-uid="BOOSEtests.ExpressionEvaluationTests.IntExpression_WithParentheses_EvaluatesCorrectly">IntExpression_WithParentheses_EvaluatesCorrectly()</h4>
+  <div class="markdown level1 summary"><p>Verifies that parentheses correctly alter evaluation order
+in integer expressions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void IntExpression_WithParentheses_EvaluatesCorrectly()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEtests_ExpressionEvaluationTests_RealExpression_EvaluatesCorrectly.md&amp;value=---%0Auid%3A%20BOOSEtests.ExpressionEvaluationTests.RealExpression_EvaluatesCorrectly%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEtests/ExpressionEvaluationTests.cs/#L103">View Source</a>
+  </span>
+  <a id="BOOSEtests_ExpressionEvaluationTests_RealExpression_EvaluatesCorrectly_" data-uid="BOOSEtests.ExpressionEvaluationTests.RealExpression_EvaluatesCorrectly*"></a>
+  <h4 id="BOOSEtests_ExpressionEvaluationTests_RealExpression_EvaluatesCorrectly" data-uid="BOOSEtests.ExpressionEvaluationTests.RealExpression_EvaluatesCorrectly">RealExpression_EvaluatesCorrectly()</h4>
+  <div class="markdown level1 summary"><p>Verifies that real-number expressions evaluate correctly.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void RealExpression_EvaluatesCorrectly()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEtests_ExpressionEvaluationTests_RealExpression_MixedIntAndReal.md&amp;value=---%0Auid%3A%20BOOSEtests.ExpressionEvaluationTests.RealExpression_MixedIntAndReal%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEtests/ExpressionEvaluationTests.cs/#L118">View Source</a>
+  </span>
+  <a id="BOOSEtests_ExpressionEvaluationTests_RealExpression_MixedIntAndReal_" data-uid="BOOSEtests.ExpressionEvaluationTests.RealExpression_MixedIntAndReal*"></a>
+  <h4 id="BOOSEtests_ExpressionEvaluationTests_RealExpression_MixedIntAndReal" data-uid="BOOSEtests.ExpressionEvaluationTests.RealExpression_MixedIntAndReal">RealExpression_MixedIntAndReal()</h4>
+  <div class="markdown level1 summary"><p>Verifies correct evaluation of expressions mixing integer
+and real values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void RealExpression_MixedIntAndReal()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEtests_ExpressionEvaluationTests_RelationalExpression_Equality.md&amp;value=---%0Auid%3A%20BOOSEtests.ExpressionEvaluationTests.RelationalExpression_Equality%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEtests/ExpressionEvaluationTests.cs/#L216">View Source</a>
+  </span>
+  <a id="BOOSEtests_ExpressionEvaluationTests_RelationalExpression_Equality_" data-uid="BOOSEtests.ExpressionEvaluationTests.RelationalExpression_Equality*"></a>
+  <h4 id="BOOSEtests_ExpressionEvaluationTests_RelationalExpression_Equality" data-uid="BOOSEtests.ExpressionEvaluationTests.RelationalExpression_Equality">RelationalExpression_Equality()</h4>
+  <div class="markdown level1 summary"><p>Verifies correct evaluation of the equality relational operator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void RelationalExpression_Equality()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEtests_ExpressionEvaluationTests_RelationalExpression_GreaterThanOrEqual.md&amp;value=---%0Auid%3A%20BOOSEtests.ExpressionEvaluationTests.RelationalExpression_GreaterThanOrEqual%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEtests/ExpressionEvaluationTests.cs/#L201">View Source</a>
+  </span>
+  <a id="BOOSEtests_ExpressionEvaluationTests_RelationalExpression_GreaterThanOrEqual_" data-uid="BOOSEtests.ExpressionEvaluationTests.RelationalExpression_GreaterThanOrEqual*"></a>
+  <h4 id="BOOSEtests_ExpressionEvaluationTests_RelationalExpression_GreaterThanOrEqual" data-uid="BOOSEtests.ExpressionEvaluationTests.RelationalExpression_GreaterThanOrEqual">RelationalExpression_GreaterThanOrEqual()</h4>
+  <div class="markdown level1 summary"><p>Verifies correct evaluation of the greater-than-or-equal
+relational operator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void RelationalExpression_GreaterThanOrEqual()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEtests_ExpressionEvaluationTests_RelationalExpression_LessThan.md&amp;value=---%0Auid%3A%20BOOSEtests.ExpressionEvaluationTests.RelationalExpression_LessThan%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEtests/ExpressionEvaluationTests.cs/#L185">View Source</a>
+  </span>
+  <a id="BOOSEtests_ExpressionEvaluationTests_RelationalExpression_LessThan_" data-uid="BOOSEtests.ExpressionEvaluationTests.RelationalExpression_LessThan*"></a>
+  <h4 id="BOOSEtests_ExpressionEvaluationTests_RelationalExpression_LessThan" data-uid="BOOSEtests.ExpressionEvaluationTests.RelationalExpression_LessThan">RelationalExpression_LessThan()</h4>
+  <div class="markdown level1 summary"><p>Verifies correct evaluation of the less-than relational operator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestMethod]
+public void RelationalExpression_LessThan()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEtests_ExpressionEvaluationTests_Setup.md&amp;value=---%0Auid%3A%20BOOSEtests.ExpressionEvaluationTests.Setup%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEtests/ExpressionEvaluationTests.cs/#L42">View Source</a>
+  </span>
+  <a id="BOOSEtests_ExpressionEvaluationTests_Setup_" data-uid="BOOSEtests.ExpressionEvaluationTests.Setup*"></a>
+  <h4 id="BOOSEtests_ExpressionEvaluationTests_Setup" data-uid="BOOSEtests.ExpressionEvaluationTests.Setup">Setup()</h4>
+  <div class="markdown level1 summary"><p>Sets up a fresh program, canvas, and parser before each test.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TestInitialize]
+public void Setup()</code></pre>
+  </div>
+  <h5 id="BOOSEtests_ExpressionEvaluationTests_Setup_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This ensures that expression evaluation tests are isolated
+and unaffected by state from previous executions.</p>
+</div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEtests_ExpressionEvaluationTests.md&amp;value=---%0Auid%3A%20BOOSEtests.ExpressionEvaluationTests%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEtests/ExpressionEvaluationTests.cs/#L16" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

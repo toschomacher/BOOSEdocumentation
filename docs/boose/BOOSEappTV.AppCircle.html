@@ -91,7 +91,8 @@ at runtime and renders a circle on the canvas.</p>
     <div class="level1"><span class="xref">Command</span></div>
     <div class="level2"><span class="xref">CanvasCommand</span></div>
     <div class="level3"><span class="xref">CommandOneParameter</span></div>
-    <div class="level4"><span class="xref">AppCircle</span></div>
+    <div class="level4"><span class="xref">CommandTwoParameters</span></div>
+    <div class="level5"><span class="xref">AppCircle</span></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
@@ -100,13 +101,16 @@ at runtime and renders a circle on the canvas.</p>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
     <div>
+      <span class="xref">CommandTwoParameters.param2</span>
+    </div>
+    <div>
+      <span class="xref">CommandTwoParameters.param2unprocessed</span>
+    </div>
+    <div>
       <span class="xref">CommandOneParameter.param1</span>
     </div>
     <div>
       <span class="xref">CommandOneParameter.param1unprocessed</span>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">CommandOneParameter.CheckParameters(string[])</a>
     </div>
     <div>
       <span class="xref">CanvasCommand.yPos</span>
@@ -182,12 +186,16 @@ at runtime and renders a circle on the canvas.</p>
   <h6><strong>Assembly</strong>: BOOSEappTV.dll</h6>
   <h5 id="BOOSEappTV_AppCircle_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class AppCircle : CommandOneParameter, ICommand</code></pre>
+    <pre><code class="lang-csharp hljs">public class AppCircle : CommandTwoParameters, ICommand</code></pre>
   </div>
   <h5 id="BOOSEappTV_AppCircle_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>This command supports variable-based expressions for the radius.
 Expression evaluation is deferred until execution time in accordance
 with BOOSE’s two-pass execution model.</p>
+<p>Extended behaviour:
+Supports an optional &quot;filled&quot; flag as the second parameter:
+<code>circle radius, filled</code>
+where filled can be <code>true/false</code> or <code>1/0</code>.</p>
 </div>
   <h3 id="constructors">Constructors
 </h3>
@@ -196,7 +204,7 @@ with BOOSE’s two-pass execution model.</p>
     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppCircle__ctor.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppCircle.%23ctor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppCircle.cs/#L21">View Source</a>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppCircle.cs/#L26">View Source</a>
   </span>
   <a id="BOOSEappTV_AppCircle__ctor_" data-uid="BOOSEappTV.AppCircle.#ctor*"></a>
   <h4 id="BOOSEappTV_AppCircle__ctor" data-uid="BOOSEappTV.AppCircle.#ctor">AppCircle()</h4>
@@ -211,10 +219,46 @@ with BOOSE’s two-pass execution model.</p>
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppCircle_CheckParameters_System_String___.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppCircle.CheckParameters(System.String%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppCircle.cs/#L152">View Source</a>
+  </span>
+  <a id="BOOSEappTV_AppCircle_CheckParameters_" data-uid="BOOSEappTV.AppCircle.CheckParameters*"></a>
+  <h4 id="BOOSEappTV_AppCircle_CheckParameters_System_String___" data-uid="BOOSEappTV.AppCircle.CheckParameters(System.String[])">CheckParameters(string[])</h4>
+  <div class="markdown level1 summary"><p>Validates the parameter list for the command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void CheckParameters(string[] parameterList)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
+        <td><span class="parametername">parameterList</span></td>
+        <td><p>The parameter list provided by the parser.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">CommandTwoParameters.CheckParameters(string[])</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppCircle_Execute.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppCircle.Execute%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppCircle.cs/#L33">View Source</a>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppCircle.cs/#L38">View Source</a>
   </span>
   <a id="BOOSEappTV_AppCircle_Execute_" data-uid="BOOSEappTV.AppCircle.Execute*"></a>
   <h4 id="BOOSEappTV_AppCircle_Execute" data-uid="BOOSEappTV.AppCircle.Execute">Execute()</h4>
@@ -254,7 +298,7 @@ and drawing the circle on the canvas.</p>
     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppCircle_ToString.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppCircle.ToString%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppCircle.cs/#L114">View Source</a>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppCircle.cs/#L164">View Source</a>
   </span>
   <a id="BOOSEappTV_AppCircle_ToString_" data-uid="BOOSEappTV.AppCircle.ToString*"></a>
   <h4 id="BOOSEappTV_AppCircle_ToString" data-uid="BOOSEappTV.AppCircle.ToString">ToString()</h4>
@@ -299,7 +343,7 @@ and drawing the circle on the canvas.</p>
                     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppCircle.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppCircle%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppCircle.cs/#L16" class="contribution-link">View Source</a>
+                    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppCircle.cs/#L21" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

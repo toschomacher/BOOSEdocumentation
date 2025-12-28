@@ -88,8 +88,7 @@ and provides application-specific drawing functionality.</p>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-    <div class="level1"><span class="xref">Canvas</span></div>
-    <div class="level2"><span class="xref">AppCanvas</span></div>
+    <div class="level1"><span class="xref">AppCanvas</span></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
@@ -98,9 +97,6 @@ and provides application-specific drawing functionality.</p>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Canvas.Rectangle(int, int, bool)</a>
-    </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
@@ -127,7 +123,7 @@ and provides application-specific drawing functionality.</p>
   <h6><strong>Assembly</strong>: BOOSEappTV.dll</h6>
   <h5 id="BOOSEappTV_AppCanvas_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class AppCanvas : Canvas, IAppCanvas, ICanvas</code></pre>
+    <pre><code class="lang-csharp hljs">public class AppCanvas : IAppCanvas, ICanvas</code></pre>
   </div>
   <h5 id="BOOSEappTV_AppCanvas_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>This class manages the drawing surface, graphics context, drawing state,

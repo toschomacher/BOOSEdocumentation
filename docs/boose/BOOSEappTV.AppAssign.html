@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Class AppAssign | mysite ">
     
-    
+    <meta name="description" content="Implements variable assignment within the BOOSE interpreter.">
       <link rel="shortcut icon" href="../favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
@@ -81,7 +81,8 @@
 
 
   <h1 id="BOOSEappTV_AppAssign" data-uid="BOOSEappTV.AppAssign" class="text-break">Class AppAssign</h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Implements variable assignment within the BOOSE interpreter.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -159,6 +160,21 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class AppAssign : Command, ICommand</code></pre>
   </div>
+  <h5 id="BOOSEappTV_AppAssign_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>
+<a class="xref" href="BOOSEappTV.AppAssign.html">AppAssign</a> is a core runtime command responsible for evaluating
+expressions and assigning their results to existing variables.
+</p>
+<p>
+It supports integer, real, and boolean assignments, including arithmetic,
+logical, and relational expressions. Expression evaluation is deferred until
+execution time in accordance with BOOSE’s two-pass execution model.
+</p>
+<p>
+This class plays a central role in program execution, as all variable updates
+ultimately flow through this command.
+</p>
+</div>
   <h3 id="constructors">Constructors
 </h3>
   <span class="small pull-right mobile-hide">
@@ -166,11 +182,12 @@
     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppAssign__ctor_System_String_System_String_.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppAssign.%23ctor(System.String%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppAssign.cs/#L13">View Source</a>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppAssign.cs/#L43">View Source</a>
   </span>
   <a id="BOOSEappTV_AppAssign__ctor_" data-uid="BOOSEappTV.AppAssign.#ctor*"></a>
   <h4 id="BOOSEappTV_AppAssign__ctor_System_String_System_String_" data-uid="BOOSEappTV.AppAssign.#ctor(System.String,System.String)">AppAssign(string, string)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initialises a new instance of the <a class="xref" href="BOOSEappTV.AppAssign.html">AppAssign</a> class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -189,12 +206,14 @@
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">varName</span></td>
-        <td></td>
+        <td><p>The name of the target variable.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">expression</span></td>
-        <td></td>
+        <td><p>The expression to be evaluated and assigned.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -205,11 +224,12 @@
     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppAssign_CheckParameters_System_String___.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppAssign.CheckParameters(System.String%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppAssign.cs/#L213">View Source</a>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppAssign.cs/#L301">View Source</a>
   </span>
   <a id="BOOSEappTV_AppAssign_CheckParameters_" data-uid="BOOSEappTV.AppAssign.CheckParameters*"></a>
   <h4 id="BOOSEappTV_AppAssign_CheckParameters_System_String___" data-uid="BOOSEappTV.AppAssign.CheckParameters(System.String[])">CheckParameters(string[])</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Performs parameter validation.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -228,22 +248,28 @@
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
         <td><span class="parametername">parameter</span></td>
-        <td></td>
+        <td><p>The parameter array.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Command.CheckParameters(string[])</a></div>
+  <h5 id="BOOSEappTV_AppAssign_CheckParameters_System_String____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Parameter validation is not required for this command, as parsing is
+handled by the parser and constructor.</p>
+</div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppAssign_Execute.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppAssign.Execute%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppAssign.cs/#L133">View Source</a>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppAssign.cs/#L213">View Source</a>
   </span>
   <a id="BOOSEappTV_AppAssign_Execute_" data-uid="BOOSEappTV.AppAssign.Execute*"></a>
   <h4 id="BOOSEappTV_AppAssign_Execute" data-uid="BOOSEappTV.AppAssign.Execute">Execute()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Executes the assignment at runtime.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -251,16 +277,21 @@
   </div>
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">BOOSE.Command.Execute()</span></div>
+  <h5 id="BOOSEappTV_AppAssign_Execute_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method evaluates the stored expression, determines the target variable’s
+type, and assigns the computed value accordingly.</p>
+</div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppAssign_Set_BOOSE_StoredProgram_System_String_.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppAssign.Set(BOOSE.StoredProgram%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppAssign.cs/#L19">View Source</a>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppAssign.cs/#L54">View Source</a>
   </span>
   <a id="BOOSEappTV_AppAssign_Set_" data-uid="BOOSEappTV.AppAssign.Set*"></a>
   <h4 id="BOOSEappTV_AppAssign_Set_BOOSE_StoredProgram_System_String_" data-uid="BOOSEappTV.AppAssign.Set(BOOSE.StoredProgram,System.String)">Set(StoredProgram, string)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Associates this assignment command with the current stored program.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -279,12 +310,14 @@
       <tr>
         <td><span class="xref">StoredProgram</span></td>
         <td><span class="parametername">program</span></td>
-        <td></td>
+        <td><p>The active <span class="xref">BOOSE.StoredProgram</span> instance.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">parameters</span></td>
-        <td></td>
+        <td><p>The raw parameter string (unused).</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -306,7 +339,7 @@
                     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppAssign.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppAssign%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppAssign.cs/#L8" class="contribution-link">View Source</a>
+                    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppAssign.cs/#L26" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

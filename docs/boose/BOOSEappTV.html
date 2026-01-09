@@ -105,11 +105,21 @@ and provides application-specific drawing functionality.</p>
       <section><p>Represents a circle drawing command that evaluates a radius expression
 at runtime and renders a circle on the canvas.</p>
 </section>
+      <h4><a class="xref" href="BOOSEappTV.AppCommand.html">AppCommand</a></h4>
+      <section><p>Base class for all custom BOOSEappTV commands.
+Implements BOOSE <span class="xref">BOOSE.ICommand</span> and provides a strongly-typed
+view of the current <a class="xref" href="BOOSEappTV.AppStoredProgram.html">AppStoredProgram</a> where available.</p>
+</section>
       <h4><a class="xref" href="BOOSEappTV.AppCommandFactory.html">AppCommandFactory</a></h4>
       <section><p>Provides a command factory for the BOOSEappTV interpreter.</p>
 </section>
       <h4><a class="xref" href="BOOSEappTV.AppConsole.html">AppConsole</a></h4>
-      <section><p>Provides a simple console output facility backed by a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.windows.forms.richtextbox">RichTextBox</a>.</p>
+      <section><p>Provides a simple console output facility backed by a RichTextBox.
+Implemented as a Singleton to ensure a single, globally accessible
+console instance throughout the application lifetime.</p>
+</section>
+      <h4><a class="xref" href="BOOSEappTV.AppDemoPrograms.html">AppDemoPrograms</a></h4>
+      <section><p>Provides a collection of predefined demonstration programs for BOOSE.</p>
 </section>
       <h4><a class="xref" href="BOOSEappTV.AppDrawTo.html">AppDrawTo</a></h4>
       <section><p>Represents a drawing command that draws a line from the current

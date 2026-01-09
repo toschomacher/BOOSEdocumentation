@@ -35,7 +35,7 @@
               </button>
 
               <a class="navbar-brand" href="../index.html">
-                <img id="logo" class="png" src="../logo.png" alt="BOOSETests Docs">
+                <img id="logo" class="svg" src="../logo.svg" alt="BOOSETests Docs">
               </a>
             </div>
             <div class="collapse navbar-collapse" id="navbar">
@@ -121,10 +121,9 @@
 public class MethodTests</code></pre>
   </div>
   <h5 id="BOOSEtests_MethodTests_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p>These tests validate the correct behaviour of user-defined methods
-within BOOSE programs, including parameter passing, return values,
-scoping rules, and execution flow.
-The tests focus on runtime semantics rather than parsing alone.</p>
+  <div class="markdown level0 remarks"><p>These tests validate method behaviour using real BOOSE execution
+patterns, mirroring how methods are used in practice rather than
+assuming isolated function semantics.</p>
 </div>
   <h3 id="methods">Methods
 </h3>
@@ -133,12 +132,12 @@ The tests focus on runtime semantics rather than parsing alone.</p>
     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEtests_MethodTests_Method_CanBeCalledMultipleTimes.md&amp;value=---%0Auid%3A%20BOOSEtests.MethodTests.Method_CanBeCalledMultipleTimes%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEtests/MethodTests.cs/#L101">View Source</a>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEtests/MethodTests.cs/#L77">View Source</a>
   </span>
   <a id="BOOSEtests_MethodTests_Method_CanBeCalledMultipleTimes_" data-uid="BOOSEtests.MethodTests.Method_CanBeCalledMultipleTimes*"></a>
   <h4 id="BOOSEtests_MethodTests_Method_CanBeCalledMultipleTimes" data-uid="BOOSEtests.MethodTests.Method_CanBeCalledMultipleTimes">Method_CanBeCalledMultipleTimes()</h4>
-  <div class="markdown level1 summary"><p>Verifies that a method can be called multiple times
-and that its return value reflects the most recent call.</p>
+  <div class="markdown level1 summary"><p>Verifies that a method can be called multiple times when
+each call result is consumed explicitly.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -151,12 +150,11 @@ public void Method_CanBeCalledMultipleTimes()</code></pre>
     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEtests_MethodTests_Method_DoesNotExecuteBodyDuringNormalFlow.md&amp;value=---%0Auid%3A%20BOOSEtests.MethodTests.Method_DoesNotExecuteBodyDuringNormalFlow%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEtests/MethodTests.cs/#L125">View Source</a>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEtests/MethodTests.cs/#L99">View Source</a>
   </span>
   <a id="BOOSEtests_MethodTests_Method_DoesNotExecuteBodyDuringNormalFlow_" data-uid="BOOSEtests.MethodTests.Method_DoesNotExecuteBodyDuringNormalFlow*"></a>
   <h4 id="BOOSEtests_MethodTests_Method_DoesNotExecuteBodyDuringNormalFlow" data-uid="BOOSEtests.MethodTests.Method_DoesNotExecuteBodyDuringNormalFlow">Method_DoesNotExecuteBodyDuringNormalFlow()</h4>
-  <div class="markdown level1 summary"><p>Verifies that a method body does not execute
-during normal program flow unless explicitly called.</p>
+  <div class="markdown level1 summary"><p>Verifies that method bodies do not execute unless called.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -164,21 +162,16 @@ during normal program flow unless explicitly called.</p>
     <pre><code class="lang-csharp hljs">[TestMethod]
 public void Method_DoesNotExecuteBodyDuringNormalFlow()</code></pre>
   </div>
-  <h5 id="BOOSEtests_MethodTests_Method_DoesNotExecuteBodyDuringNormalFlow_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Method declarations should be skipped at runtime,
-and their bodies should only execute via a <code>call</code> command.</p>
-</div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEtests_MethodTests_Method_ReturnsCorrectValue.md&amp;value=---%0Auid%3A%20BOOSEtests.MethodTests.Method_ReturnsCorrectValue%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEtests/MethodTests.cs/#L54">View Source</a>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEtests/MethodTests.cs/#L32">View Source</a>
   </span>
   <a id="BOOSEtests_MethodTests_Method_ReturnsCorrectValue_" data-uid="BOOSEtests.MethodTests.Method_ReturnsCorrectValue*"></a>
   <h4 id="BOOSEtests_MethodTests_Method_ReturnsCorrectValue" data-uid="BOOSEtests.MethodTests.Method_ReturnsCorrectValue">Method_ReturnsCorrectValue()</h4>
-  <div class="markdown level1 summary"><p>Verifies that a method returns the correct value
-when invoked with valid arguments.</p>
+  <div class="markdown level1 summary"><p>Verifies that a method returns the correct value when called.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -191,12 +184,11 @@ public void Method_ReturnsCorrectValue()</code></pre>
     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEtests_MethodTests_Method_UsesPassedArguments_NotGlobals.md&amp;value=---%0Auid%3A%20BOOSEtests.MethodTests.Method_UsesPassedArguments_NotGlobals%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEtests/MethodTests.cs/#L77">View Source</a>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEtests/MethodTests.cs/#L52">View Source</a>
   </span>
   <a id="BOOSEtests_MethodTests_Method_UsesPassedArguments_NotGlobals_" data-uid="BOOSEtests.MethodTests.Method_UsesPassedArguments_NotGlobals*"></a>
   <h4 id="BOOSEtests_MethodTests_Method_UsesPassedArguments_NotGlobals" data-uid="BOOSEtests.MethodTests.Method_UsesPassedArguments_NotGlobals">Method_UsesPassedArguments_NotGlobals()</h4>
-  <div class="markdown level1 summary"><p>Verifies that method parameters correctly shadow
-global variables with the same names.</p>
+  <div class="markdown level1 summary"><p>Verifies that method parameters shadow global variables.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -204,21 +196,17 @@ global variables with the same names.</p>
     <pre><code class="lang-csharp hljs">[TestMethod]
 public void Method_UsesPassedArguments_NotGlobals()</code></pre>
   </div>
-  <h5 id="BOOSEtests_MethodTests_Method_UsesPassedArguments_NotGlobals_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This test ensures that argument values passed to a method
-are used instead of existing global variables.</p>
-</div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEtests_MethodTests_Method_WithMultipleParameters_ReturnsCorrectResult.md&amp;value=---%0Auid%3A%20BOOSEtests.MethodTests.Method_WithMultipleParameters_ReturnsCorrectResult%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEtests/MethodTests.cs/#L146">View Source</a>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEtests/MethodTests.cs/#L119">View Source</a>
   </span>
   <a id="BOOSEtests_MethodTests_Method_WithMultipleParameters_ReturnsCorrectResult_" data-uid="BOOSEtests.MethodTests.Method_WithMultipleParameters_ReturnsCorrectResult*"></a>
   <h4 id="BOOSEtests_MethodTests_Method_WithMultipleParameters_ReturnsCorrectResult" data-uid="BOOSEtests.MethodTests.Method_WithMultipleParameters_ReturnsCorrectResult">Method_WithMultipleParameters_ReturnsCorrectResult()</h4>
-  <div class="markdown level1 summary"><p>Verifies that a method with multiple parameters
-evaluates expressions correctly and returns the expected result.</p>
+  <div class="markdown level1 summary"><p>Verifies that a method with multiple parameters evaluates
+expressions correctly.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -231,23 +219,17 @@ public void Method_WithMultipleParameters_ReturnsCorrectResult()</code></pre>
     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEtests_MethodTests_Setup.md&amp;value=---%0Auid%3A%20BOOSEtests.MethodTests.Setup%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEtests/MethodTests.cs/#L42">View Source</a>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEtests/MethodTests.cs/#L21">View Source</a>
   </span>
   <a id="BOOSEtests_MethodTests_Setup_" data-uid="BOOSEtests.MethodTests.Setup*"></a>
   <h4 id="BOOSEtests_MethodTests_Setup" data-uid="BOOSEtests.MethodTests.Setup">Setup()</h4>
-  <div class="markdown level1 summary"><p>Initialises a fresh canvas, program, and parser
-before each test is executed.</p>
-</div>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[TestInitialize]
 public void Setup()</code></pre>
   </div>
-  <h5 id="BOOSEtests_MethodTests_Setup_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This ensures that each test runs in isolation and that
-no state persists between tests.</p>
-</div>
 
 </article>
           </div>
@@ -260,7 +242,7 @@ no state persists between tests.</p>
                     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEtests_MethodTests.md&amp;value=---%0Auid%3A%20BOOSEtests.MethodTests%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEtests/MethodTests.cs/#L16" class="contribution-link">View Source</a>
+                    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEtests/MethodTests.cs/#L14" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

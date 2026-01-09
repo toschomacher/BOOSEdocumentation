@@ -159,10 +159,16 @@
     <pre><code class="lang-csharp hljs">public class AppFor : Command, ICommand</code></pre>
   </div>
   <h5 id="BOOSEappTV_AppFor_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p>This command controls loop initialisation, condition checking,
-and execution flow. Loop termination and iteration control
-are completed in conjunction with the corresponding
-<a class="xref" href="BOOSEappTV.AppEndFor.html">AppEndFor</a> command.</p>
+  <div class="markdown level0 remarks"><p>
+<a class="xref" href="BOOSEappTV.AppFor.html">AppFor</a> controls loop initialisation, condition checking,
+and execution flow at runtime. It evaluates the loop bounds and step
+expressions dynamically, allowing expressions and variables to be
+used for loop control.
+</p>
+<p>
+Structural linking between the <code>for</code> command and its corresponding
+<code>end for</code> command is handled by the parser at compile time.
+</p>
 </div>
   <h3 id="fields">Fields
 </h3>
@@ -171,10 +177,11 @@ are completed in conjunction with the corresponding
     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppFor_EndExpr.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppFor.EndExpr%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppFor.cs/#L21">View Source</a>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppFor.cs/#L40">View Source</a>
   </span>
   <h4 id="BOOSEappTV_AppFor_EndExpr" data-uid="BOOSEappTV.AppFor.EndExpr">EndExpr</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The expression defining the termination bound of the loop.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -200,10 +207,11 @@ are completed in conjunction with the corresponding
     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppFor_EndForLine.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppFor.EndForLine%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppFor.cs/#L25">View Source</a>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppFor.cs/#L56">View Source</a>
   </span>
   <h4 id="BOOSEappTV_AppFor_EndForLine" data-uid="BOOSEappTV.AppFor.EndForLine">EndForLine</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The program counter position of the matching <code>end for</code> command.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -229,10 +237,11 @@ are completed in conjunction with the corresponding
     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppFor_ForLine.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppFor.ForLine%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppFor.cs/#L24">View Source</a>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppFor.cs/#L51">View Source</a>
   </span>
   <h4 id="BOOSEappTV_AppFor_ForLine" data-uid="BOOSEappTV.AppFor.ForLine">ForLine</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The program counter position of this <code>for</code> command.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -258,10 +267,11 @@ are completed in conjunction with the corresponding
     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppFor_StartExpr.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppFor.StartExpr%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppFor.cs/#L20">View Source</a>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppFor.cs/#L35">View Source</a>
   </span>
   <h4 id="BOOSEappTV_AppFor_StartExpr" data-uid="BOOSEappTV.AppFor.StartExpr">StartExpr</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The expression defining the initial value of the loop variable.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -287,10 +297,12 @@ are completed in conjunction with the corresponding
     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppFor_StepExpr.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppFor.StepExpr%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppFor.cs/#L22">View Source</a>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppFor.cs/#L46">View Source</a>
   </span>
   <h4 id="BOOSEappTV_AppFor_StepExpr" data-uid="BOOSEappTV.AppFor.StepExpr">StepExpr</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The expression defining the step increment or decrement.
+Defaults to <code>1</code> if not explicitly specified.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -316,10 +328,11 @@ are completed in conjunction with the corresponding
     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppFor_VarName.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppFor.VarName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppFor.cs/#L19">View Source</a>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppFor.cs/#L30">View Source</a>
   </span>
   <h4 id="BOOSEappTV_AppFor_VarName" data-uid="BOOSEappTV.AppFor.VarName">VarName</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The name of the loop control variable.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -340,6 +353,38 @@ are completed in conjunction with the corresponding
       </tr>
     </tbody>
   </table>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppFor_ConditionWasTrue.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppFor.ConditionWasTrue%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppFor.cs/#L25">View Source</a>
+  </span>
+  <a id="BOOSEappTV_AppFor_ConditionWasTrue_" data-uid="BOOSEappTV.AppFor.ConditionWasTrue*"></a>
+  <h4 id="BOOSEappTV_AppFor_ConditionWasTrue" data-uid="BOOSEappTV.AppFor.ConditionWasTrue">ConditionWasTrue</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ConditionWasTrue { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
 </h3>
   <span class="small pull-right mobile-hide">
@@ -347,11 +392,12 @@ are completed in conjunction with the corresponding
     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppFor_CheckParameters_System_String___.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppFor.CheckParameters(System.String%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppFor.cs/#L164">View Source</a>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppFor.cs/#L252">View Source</a>
   </span>
   <a id="BOOSEappTV_AppFor_CheckParameters_" data-uid="BOOSEappTV.AppFor.CheckParameters*"></a>
   <h4 id="BOOSEappTV_AppFor_CheckParameters_System_String___" data-uid="BOOSEappTV.AppFor.CheckParameters(System.String[])">CheckParameters(string[])</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Performs parameter validation.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -370,22 +416,27 @@ are completed in conjunction with the corresponding
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
         <td><span class="parametername">parameter</span></td>
-        <td></td>
+        <td><p>The parameter array.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Command.CheckParameters(string[])</a></div>
+  <h5 id="BOOSEappTV_AppFor_CheckParameters_System_String____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Parameter validation is handled during parsing in <a class="xref" href="BOOSEappTV.AppFor.html#BOOSEappTV_AppFor_Set_BOOSE_StoredProgram_System_String_">Set(StoredProgram, string)</a>.</p>
+</div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppFor_Compile.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppFor.Compile%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppFor.cs/#L90">View Source</a>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppFor.cs/#L151">View Source</a>
   </span>
   <a id="BOOSEappTV_AppFor_Compile_" data-uid="BOOSEappTV.AppFor.Compile*"></a>
   <h4 id="BOOSEappTV_AppFor_Compile" data-uid="BOOSEappTV.AppFor.Compile">Compile()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Performs compile-time processing for the <code>for</code> loop.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -393,16 +444,21 @@ are completed in conjunction with the corresponding
   </div>
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">BOOSE.Command.Compile()</span></div>
+  <h5 id="BOOSEappTV_AppFor_Compile_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Control-flow linking is performed by the parser; no additional
+compile-time actions are required here.</p>
+</div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppFor_EvalInt_System_String_.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppFor.EvalInt(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppFor.cs/#L130">View Source</a>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppFor.cs/#L203">View Source</a>
   </span>
   <a id="BOOSEappTV_AppFor_EvalInt_" data-uid="BOOSEappTV.AppFor.EvalInt*"></a>
   <h4 id="BOOSEappTV_AppFor_EvalInt_System_String_" data-uid="BOOSEappTV.AppFor.EvalInt(System.String)">EvalInt(string)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Evaluates an integer expression using the current program state.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -421,7 +477,8 @@ are completed in conjunction with the corresponding
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">expr</span></td>
-        <td></td>
+        <td><p>The expression to evaluate.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -436,7 +493,8 @@ are completed in conjunction with the corresponding
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td></td>
+        <td><p>The evaluated integer value.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -445,11 +503,12 @@ are completed in conjunction with the corresponding
     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppFor_Execute.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppFor.Execute%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppFor.cs/#L95">View Source</a>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppFor.cs/#L164">View Source</a>
   </span>
   <a id="BOOSEappTV_AppFor_Execute_" data-uid="BOOSEappTV.AppFor.Execute*"></a>
   <h4 id="BOOSEappTV_AppFor_Execute" data-uid="BOOSEappTV.AppFor.Execute">Execute()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Executes the <code>for</code> loop at runtime.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -457,16 +516,22 @@ are completed in conjunction with the corresponding
   </div>
   <h5 class="overrides">Overrides</h5>
   <div><span class="xref">BOOSE.Command.Execute()</span></div>
+  <h5 id="BOOSEappTV_AppFor_Execute_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method initialises the loop variable on first execution,
+evaluates the termination condition on each iteration, and
+controls program flow by updating the program counter.</p>
+</div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppFor_Reset.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppFor.Reset%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppFor.cs/#L125">View Source</a>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppFor.cs/#L193">View Source</a>
   </span>
   <a id="BOOSEappTV_AppFor_Reset_" data-uid="BOOSEappTV.AppFor.Reset*"></a>
   <h4 id="BOOSEappTV_AppFor_Reset" data-uid="BOOSEappTV.AppFor.Reset">Reset()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Resets the loop state so it may be executed again.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -477,11 +542,12 @@ are completed in conjunction with the corresponding
     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppFor_Set_BOOSE_StoredProgram_System_String_.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppFor.Set(BOOSE.StoredProgram%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppFor.cs/#L29">View Source</a>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppFor.cs/#L76">View Source</a>
   </span>
   <a id="BOOSEappTV_AppFor_Set_" data-uid="BOOSEappTV.AppFor.Set*"></a>
   <h4 id="BOOSEappTV_AppFor_Set_BOOSE_StoredProgram_System_String_" data-uid="BOOSEappTV.AppFor.Set(BOOSE.StoredProgram,System.String)">Set(StoredProgram, string)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Parses and stores the parameters for the <code>for</code> loop.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -500,17 +566,35 @@ are completed in conjunction with the corresponding
       <tr>
         <td><span class="xref">StoredProgram</span></td>
         <td><span class="parametername">program</span></td>
-        <td></td>
+        <td><p>The active <span class="xref">BOOSE.StoredProgram</span> instance.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">parameters</span></td>
-        <td></td>
+        <td><p>The parameter string defining the loop variable, bounds, and optional step.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <h5 class="overrides">Overrides</h5>
   <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Command.Set(StoredProgram, string)</a></div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">ParserException</span></td>
+        <td><p>Thrown when the loop syntax is invalid or required components are missing.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="implements">Implements</h3>
   <div>
       <span class="xref">BOOSE.ICommand</span>
@@ -527,7 +611,7 @@ are completed in conjunction with the corresponding
                     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppFor.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppFor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppFor.cs/#L17" class="contribution-link">View Source</a>
+                    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppFor.cs/#L23" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

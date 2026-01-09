@@ -87,8 +87,7 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-    <div class="level1"><span class="xref">Parser</span></div>
-    <div class="level2"><span class="xref">AppParser</span></div>
+    <div class="level1"><span class="xref">AppParser</span></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
@@ -96,9 +95,6 @@
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Parser.ParseProgram(string)</a>
-    </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
@@ -125,10 +121,10 @@
   <h6><strong>Assembly</strong>: BOOSEappTV.dll</h6>
   <h5 id="BOOSEappTV_AppParser_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class AppParser : Parser, IParser</code></pre>
+    <pre><code class="lang-csharp hljs">public class AppParser : IParser</code></pre>
   </div>
   <h5 id="BOOSEappTV_AppParser_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p>This parser extends the BOOSE <span class="xref">BOOSE.Parser</span> to support
+  <div class="markdown level0 remarks"><p>This parser extends the BOOSE <span class="xref">BOOSE.IParser</span> interface to support
 application-specific commands, variable reassignment, control-flow
 constructs, and method definitions.
 It preserves BOOSE’s two-pass execution model by ensuring that
@@ -142,7 +138,7 @@ to runtime.</p>
     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppParser__ctor_BOOSE_CommandFactory_BOOSEappTV_AppStoredProgram_.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppParser.%23ctor(BOOSE.CommandFactory%2CBOOSEappTV.AppStoredProgram)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppParser.cs/#L49">View Source</a>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppParser.cs/#L51">View Source</a>
   </span>
   <a id="BOOSEappTV_AppParser__ctor_" data-uid="BOOSEappTV.AppParser.#ctor*"></a>
   <h4 id="BOOSEappTV_AppParser__ctor_BOOSE_CommandFactory_BOOSEappTV_AppStoredProgram_" data-uid="BOOSEappTV.AppParser.#ctor(BOOSE.CommandFactory,BOOSEappTV.AppStoredProgram)">AppParser(CommandFactory, AppStoredProgram)</h4>
@@ -177,6 +173,38 @@ to runtime.</p>
       </tr>
     </tbody>
   </table>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppParser_Program.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppParser.Program%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppParser.cs/#L25">View Source</a>
+  </span>
+  <a id="BOOSEappTV_AppParser_Program_" data-uid="BOOSEappTV.AppParser.Program*"></a>
+  <h4 id="BOOSEappTV_AppParser_Program" data-uid="BOOSEappTV.AppParser.Program">Program</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AppStoredProgram Program { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="BOOSEappTV.AppStoredProgram.html">AppStoredProgram</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="methods">Methods
 </h3>
   <span class="small pull-right mobile-hide">
@@ -184,7 +212,7 @@ to runtime.</p>
     <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppParser_ParseCommand_System_String_.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppParser.ParseCommand(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppParser.cs/#L66">View Source</a>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppParser.cs/#L67">View Source</a>
   </span>
   <a id="BOOSEappTV_AppParser_ParseCommand_" data-uid="BOOSEappTV.AppParser.ParseCommand*"></a>
   <h4 id="BOOSEappTV_AppParser_ParseCommand_System_String_" data-uid="BOOSEappTV.AppParser.ParseCommand(System.String)">ParseCommand(string)</h4>
@@ -193,7 +221,7 @@ to runtime.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override ICommand ParseCommand(string line)</code></pre>
+    <pre><code class="lang-csharp hljs">public ICommand ParseCommand(string line)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -229,8 +257,6 @@ to runtime.</p>
       </tr>
     </tbody>
   </table>
-  <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Parser.ParseCommand(string)</a></div>
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-condensed">
     <thead>
@@ -243,6 +269,70 @@ to runtime.</p>
       <tr>
         <td><span class="xref">ParserException</span></td>
         <td><p>Thrown when a syntax or structural error is encountered.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/new/main/apiSpec/new?filename=BOOSEappTV_AppParser_ParseProgram_System_String_.md&amp;value=---%0Auid%3A%20BOOSEappTV.AppParser.ParseProgram(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ASE2025repos/ase-boose-assignment-toschomacher/blob/main/BOOSEappTV/AppParser.cs/#L350">View Source</a>
+  </span>
+  <a id="BOOSEappTV_AppParser_ParseProgram_" data-uid="BOOSEappTV.AppParser.ParseProgram*"></a>
+  <h4 id="BOOSEappTV_AppParser_ParseProgram_System_String_" data-uid="BOOSEappTV.AppParser.ParseProgram(System.String)">ParseProgram(string)</h4>
+  <div class="markdown level1 summary"><p>Parses a complete BOOSE program from a block of source text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ParseProgram(string programText)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">programText</span></td>
+        <td><p>The full source code of the program to be parsed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="BOOSEappTV_AppParser_ParseProgram_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method normalises line endings, splits the source text into
+individual lines, and parses each line sequentially.
+Blank or whitespace-only lines are ignored.
+Prior to parsing, all parser state is reset to guarantee that each
+program is processed independently and deterministically.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown if <code class="paramref">programText</code> is <code>null</code>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">ParserException</span></td>
+        <td><p>Thrown when a syntax or structural error is encountered during parsing.
+The exception message includes the one-based line number at which the
+error occurred.</p>
 </td>
       </tr>
     </tbody>
